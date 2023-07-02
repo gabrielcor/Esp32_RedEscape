@@ -30,10 +30,12 @@ WiFiClient networkClient;
 const IPAddress server(192, 168, 5, 160);
 const int port = 1883;
 
-// Unique ID used to identify this device on the MQTT network (at first, it can be overriden by the server)
+// Unique ID used to identify this device on the MQTT network 
 char deviceIDstr[] = "UNCONFIGURED";
 char *deviceID = deviceIDstr;
 char *deviceMacAddress; // MAC address of the device
+char deviceNamestr[] = "";
+char *deviceName = deviceNamestr;       // Name of the device
 
   
 PubSubClient pc(server, port, networkClient);

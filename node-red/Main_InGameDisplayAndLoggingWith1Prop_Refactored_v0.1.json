@@ -176,7 +176,9 @@
             "65659247aa3d3a29"
         ],
         "x": 74,
-        "y": 79
+        "y": 79,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "926b25295ff0c140",
@@ -194,7 +196,9 @@
             "f36c6da1dffe58a7"
         ],
         "x": 994,
-        "y": 59
+        "y": 59,
+        "w": 479,
+        "h": 122
     },
     {
         "id": "b3d4001bac0269f5",
@@ -232,7 +236,9 @@
             "2a3826161c24abd7"
         ],
         "x": 74,
-        "y": 239
+        "y": 239,
+        "w": 1212,
+        "h": 462
     },
     {
         "id": "83ec599797030eba",
@@ -3451,8 +3457,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 300,
-        "y": 200,
+        "x": 240,
+        "y": 160,
         "wires": [
             [
                 "89cca040e12c7ef5"
@@ -3465,76 +3471,13 @@
         "z": "e6bf3e66f1775fc0",
         "name": "",
         "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 530,
-        "y": 200,
+        "action": "obj",
+        "pretty": true,
+        "x": 390,
+        "y": 380,
         "wires": [
             [
-                "b5dcfadf91830c71",
-                "fef107a170c3ba79"
-            ]
-        ]
-    },
-    {
-        "id": "b5dcfadf91830c71",
-        "type": "debug",
-        "z": "e6bf3e66f1775fc0",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 740,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "fef107a170c3ba79",
-        "type": "change",
-        "z": "e6bf3e66f1775fc0",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"id\":\"\",\"command\":\"INITIALIZERESULT\",\"name\":\"LED\",\"deviceName\":\"WLED001\",\"description\":\"WLED Controller\",\"state\":\"OFF\",\"rgb\":\"000,000,000\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 740,
-        "y": 260,
-        "wires": [
-            [
-                "be7fcf953ba43149"
-            ]
-        ]
-    },
-    {
-        "id": "be7fcf953ba43149",
-        "type": "function",
-        "z": "e6bf3e66f1775fc0",
-        "name": "Assign device",
-        "func": "msg.payload.id = flow.get(\"id\");\nmsg.topic = \"ToDevice/\" + flow.get(\"id\");\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 940,
-        "y": 340,
-        "wires": [
-            [
-                "9279911921b45e08"
+                "0f1d138ac5e417f1"
             ]
         ]
     },
@@ -3550,5 +3493,42 @@
         "x": 1075,
         "y": 440,
         "wires": []
+    },
+    {
+        "id": "7d4a0d9546716346",
+        "type": "debug",
+        "z": "e6bf3e66f1775fc0",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "0f1d138ac5e417f1",
+        "type": "function",
+        "z": "e6bf3e66f1775fc0",
+        "name": "UpdateDeviceSetup",
+        "func": "var payload = msg.payload; //get payload\npayload.command = \"INITIALIZERESULT\";\npayload.deviceName = \"WLED001\";\nmsg.payload = payload;\nmsg.topic = \"ToDevice/\" + msg.payload[\"id\"];\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 220,
+        "wires": [
+            [
+                "7d4a0d9546716346",
+                "9279911921b45e08"
+            ]
+        ]
     }
 ]

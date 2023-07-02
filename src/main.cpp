@@ -34,6 +34,17 @@ void receiveUpdate(const JsonDocument &jsonDoc)
     state = Running;
   }
 
+if (jsonDoc["command"] == "INITIALIZERESULT") // Server asks for init 
+  {
+      if (jsonDoc["deviceName"] != nullptr)
+    {
+        // assign device name to variable
+        String tmpdeviceName = jsonDoc["deviceName"];
+        tmpdeviceName.toCharArray(deviceName, tmpdeviceName.length() + 1);
+        Serial.print("Device Name changed to:");
+        Serial.println(deviceName);
+    }
+  }
 //////////////////////////
 #pragma region "Add code to act upon message received from ERS Server for each installed functionality"
   #ifdef WLEDTag
