@@ -63,6 +63,7 @@ void sendUpdateToMQTTServer(char locTime[9])
   // General data for any device: id, state, time
   StaticJsonDocument<128> jsonDoc;
   jsonDoc["id"] = deviceID;
+  jsonDoc["deviceName"]=  deviceName;
   jsonDoc["state"] = (state == State::Solved) ? "SOLVED" : "UNSOLVED";
   jsonDoc["time"] = locTime;
 
