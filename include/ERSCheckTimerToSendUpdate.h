@@ -4,7 +4,7 @@
 // //////////////////////////
 
 // Show local time and send to MQTT
-void printLocalTime()
+void InitiateUpdateToMQTT()
 {
   struct tm timeinfo;
   char locTime[9];
@@ -18,7 +18,7 @@ void printLocalTime()
     Serial.println(&timeinfo, "%A, %B %d %Y %H:%M:%S");
     sprintf(locTime, "%02d:%02d:%02d", timeinfo.tm_hour, timeinfo.tm_min, timeinfo.tm_sec);
   }
-  sendUpdate(locTime);
+  sendUpdateToMQTTServer(locTime);
 }
 
 // Function that receives seconds as input and a number as input and returns seconds rounded to that number
@@ -42,14 +42,13 @@ int roundSeconds(int seconds, int roundTo)
   return seconds;
 }
 
-// Update time
-void updateTime()
+void CheckAndSendUpdateviaMQTT()
 {
   uint8_t secondHandT = (millis() / 1000) % 60;
   secondHandT = roundSeconds(secondHandT, secondsToUpdateServer);
   if (lastSecondT != secondHandT)
   {
     lastSecondT = secondHandT;
-    printLocalTime(); // it will take some time to sync time :)
+    InitiateUpdateToMQTT(); 
   }
 }

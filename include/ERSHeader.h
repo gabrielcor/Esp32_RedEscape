@@ -50,6 +50,9 @@ const long gmtOffset_sec = 3600;
 const int daylightOffset_sec = 3600;
 const char *time_zone = "CLT3"; // Santiago
 
+// Create firstTime variable to use in loop
+bool firstTime = true;
+
 //////////////////////////
 // End of mandatory section
 //////////////////////////

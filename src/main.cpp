@@ -46,7 +46,7 @@ void receiveUpdate(const JsonDocument &jsonDoc)
 
 
 // This function is where we send updates to the MQTT server
-void sendUpdate(char locTime[9])
+void sendUpdateToMQTTServer(char locTime[9])
 {
   // Create JSON document
   // General data for any device: id, state, time
@@ -125,10 +125,36 @@ void setup()
 
 }
 
+
+void sendInitializeMQTTServer()
+{
+  StaticJsonDocument<128> jsonDoc;
+  jsonDoc["id"] = deviceID;
+  jsonDoc["state"] = (state == State::Solved) ? "SOLVED" : "UNSOLVED";
+  jsonDoc["command"] = "INITIALIZE";
+  char mqttMsg[128];
+  serializeJson(jsonDoc, mqttMsg);
+  pc.publish(topicpub, mqttMsg);
+  // print jsondoc to Serial
+  serializeJson(jsonDoc, Serial);
+  Serial.println();
+}
+
+
 void loop()
 {
-  updateTime();
   connectToMQTT();
+
+// do something just on the first time we are here
+  if (firstTime)
+  {
+    // Send initial update to MQTT
+    sendInitializeMQTTServer();
+    firstTime = false;
+  }
+
+  CheckAndSendUpdateviaMQTT();
+
   // Call the main MQTT loop to check for and publish messages
   if (pc.connected())
   {
