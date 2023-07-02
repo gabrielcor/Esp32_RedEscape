@@ -7,7 +7,7 @@
 
 
 // Tags to include/exclude functionalities
-#define BLETag
+// #define BLETag
 #define WLEDTag
 
 #ifdef BLETag

@@ -53,6 +53,14 @@
         "env": []
     },
     {
+        "id": "e6bf3e66f1775fc0",
+        "type": "tab",
+        "label": "Process Init Messages From Devices",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "063501cbf8d4d96b",
         "type": "group",
         "z": "350f3f1be5bf834e",
@@ -238,7 +246,9 @@
             "eae1ab410ce116f7"
         ],
         "x": 54,
-        "y": 239
+        "y": 239,
+        "w": 232,
+        "h": 82
     },
     {
         "id": "857046f1705f6e09",
@@ -255,7 +265,9 @@
             "c86c5b73d7b070d2"
         ],
         "x": 274,
-        "y": 99
+        "y": 99,
+        "w": 322,
+        "h": 162
     },
     {
         "id": "217067ffa17d7c85",
@@ -270,7 +282,9 @@
             "8a055186d1dd9b0f"
         ],
         "x": 114,
-        "y": 319
+        "y": 319,
+        "w": 172,
+        "h": 142
     },
     {
         "id": "287cddd6953c1cbd",
@@ -285,7 +299,9 @@
             "18404cad9ee52512"
         ],
         "x": 244,
-        "y": 179
+        "y": 179,
+        "w": 462,
+        "h": 122
     },
     {
         "id": "60aa0fe460322fc9",
@@ -299,7 +315,9 @@
             "67ed85c7985c08f7"
         ],
         "x": 894,
-        "y": 159
+        "y": 159,
+        "w": 123,
+        "h": 82
     },
     {
         "id": "7f19e7ce3ba183da",
@@ -313,7 +331,9 @@
             "46fe3fba38d8ec55"
         ],
         "x": 1014,
-        "y": 359
+        "y": 359,
+        "w": 103,
+        "h": 82
     },
     {
         "id": "942a7bbbbab86018",
@@ -329,7 +349,9 @@
             "e59eded70d330ae4"
         ],
         "x": 74,
-        "y": 659
+        "y": 659,
+        "w": 512,
+        "h": 162
     },
     {
         "id": "45013fdfd43f76cb",
@@ -563,14 +585,6 @@
         "willMsg": {},
         "userProps": "",
         "sessionExpiry": ""
-    },
-    {
-        "id": "dd614833c1f12538",
-        "type": "ui_tab",
-        "name": "Home",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
     },
     {
         "id": "197160bd5c9b62c4",
@@ -2870,14 +2884,14 @@
         "type": "function",
         "z": "e1f045082e6b20f1",
         "name": "Parse JSON and update global state",
-        "func": "// The prop id is in the message\n// that's how we standarized communication\nvar propid = msg.payload[\"id\"];\n\n// Get the current stored value of this prop,\n// Or create a new entry if we didn't previously know about it\nvar prop = global.get(propid) || {};\n\n// Now loop over the incoming values and update the stored state\nvar count = 0;\nfor (var key in msg.payload) {\n  if (msg.payload.hasOwnProperty(key)) {\n    prop[key] = msg.payload[key];\n    count++;\n  }\n}\n\n// Save the global value again\nglobal.set(propid, prop);\n\n// Pass the updated status through the message flow\nmsg.payload = prop;\nmsg.topic = \"Internal/\"+propid;\n\n// Update the dashboard editor\nnode.status({fill:\"green\", shape:\"dot\", text:count + \" values updated\"});\n\n// Pass the value along the flow\nreturn msg;",
+        "func": "// The prop id is in the message\n// that's how we standarized communication\nvar propid = msg.payload[\"id\"];\n\n// Get the current stored value of this prop,\n// Or create a new entry if we didn't previously know about it\nvar prop = global.get(propid) || {};\n\n// Now loop over the incoming values and update the stored state\nvar count = 0;\nfor (var key in msg.payload) {\n  if (msg.payload.hasOwnProperty(key)) {\n    prop[key] = msg.payload[key];\n    count++;\n  }\n}\n\n// Save the global value again\nglobal.set(propid, prop);\n\nmsg.payload = prop;\n// Check if it has a command\nif (msg.payload.hasOwnProperty(\"command\"))\n{\n  var command = msg.payload[\"command\"];\n  if (command == \"GETINITIALCONFIG\")\n  {\n    msg.topic = \"Initialize/\" + propid;\n  }\n  else\n  {\n    msg.topic = \"Internal/\" + propid;\n  }\n}\nelse\n{\n  // Pass the updated status through the message flow\n  msg.topic = \"Internal/\"+propid;\n}\n// Update the dashboard editor\nnode.status({fill:\"green\", shape:\"dot\", text:count + \" values updated\"});\n\n// Pass the value along the flow\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 610,
-        "y": 280,
+        "x": 490,
+        "y": 380,
         "wires": [
             [
                 "f070c390e9e89c11"
@@ -2943,9 +2957,10 @@
         "type": "link in",
         "z": "29f4ff9c6fcbf566",
         "g": "287cddd6953c1cbd",
-        "name": "link in 1",
+        "name": "in Send to MQTT",
         "links": [
-            "46fe3fba38d8ec55"
+            "46fe3fba38d8ec55",
+            "9279911921b45e08"
         ],
         "x": 285,
         "y": 260,
@@ -3115,7 +3130,7 @@
                 "t": "set",
                 "p": "deviceId",
                 "pt": "flow",
-                "to": "WLED100",
+                "to": "083AF2B74D6C",
                 "tot": "str"
             }
         ],
@@ -3422,5 +3437,118 @@
                 "fd5e6940324921ac"
             ]
         ]
+    },
+    {
+        "id": "1aaf6cfe14348092",
+        "type": "mqtt in",
+        "z": "e6bf3e66f1775fc0",
+        "name": "Receive initialize messages",
+        "topic": "Initialize/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e21e4642.c12f6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 200,
+        "wires": [
+            [
+                "89cca040e12c7ef5"
+            ]
+        ]
+    },
+    {
+        "id": "89cca040e12c7ef5",
+        "type": "json",
+        "z": "e6bf3e66f1775fc0",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 530,
+        "y": 200,
+        "wires": [
+            [
+                "b5dcfadf91830c71",
+                "fef107a170c3ba79"
+            ]
+        ]
+    },
+    {
+        "id": "b5dcfadf91830c71",
+        "type": "debug",
+        "z": "e6bf3e66f1775fc0",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "fef107a170c3ba79",
+        "type": "change",
+        "z": "e6bf3e66f1775fc0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"id\":\"\",\"command\":\"INITIALIZE\",\"name\":\"LED\",\"deviceName\":\"WLED001\",\"description\":\"WLED Controller\",\"state\":\"OFF\",\"rgb\":\"000,000,000\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 260,
+        "wires": [
+            [
+                "be7fcf953ba43149"
+            ]
+        ]
+    },
+    {
+        "id": "be7fcf953ba43149",
+        "type": "function",
+        "z": "e6bf3e66f1775fc0",
+        "name": "Assign device",
+        "func": "msg.payload.id = flow.get(\"id\");\nmsg.topic = \"ToDevice/\" + flow.get(\"id\");\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 340,
+        "wires": [
+            [
+                "9279911921b45e08"
+            ]
+        ]
+    },
+    {
+        "id": "9279911921b45e08",
+        "type": "link out",
+        "z": "e6bf3e66f1775fc0",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "18404cad9ee52512"
+        ],
+        "x": 1075,
+        "y": 440,
+        "wires": []
     }
 ]

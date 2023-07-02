@@ -31,7 +31,7 @@ const IPAddress server(192, 168, 5, 160);
 const int port = 1883;
 
 // Unique ID used to identify this device on the MQTT network (at first, it can be overriden by the server)
-char deviceIDstr[] = "WLED100";
+char deviceIDstr[] = "UNCONFIGURED";
 char *deviceID = deviceIDstr;
 char *deviceMacAddress; // MAC address of the device
 

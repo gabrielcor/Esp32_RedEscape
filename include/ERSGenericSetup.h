@@ -30,3 +30,9 @@
   String macAddress = WiFi.macAddress();
   macAddress.toCharArray(deviceMacAddress, 32);
   Serial.println(macAddress);
+  // REMOVE ":" from macAddress
+  macAddress.replace(":", "");
+  // Assign it to deviceID
+  macAddress.toCharArray(deviceIDstr, 32);
+  deviceID = deviceIDstr;
+  
