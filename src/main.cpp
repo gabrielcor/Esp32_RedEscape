@@ -5,10 +5,8 @@
 // //////////////////////////
 // #pragma region "Add code ..."
 
-
-// Tags to include/exclude functionalities
-// #define BLETag
-#define WLEDTag
+#pragma region "Add code to include / exclude functionality"
+#include "ERSTagDeclaration.h"
 
 #ifdef BLETag
 #include "BLE\ERSBleHeader.h"
@@ -17,6 +15,12 @@
 #ifdef WLEDTag
 #include "WLED\ERSWledHeader.h"
 #endif
+
+#ifdef REEDTag
+#include "REED\ERSReedHeader.h"
+#endif
+
+#pragma endregion // end include / exclude functionality
 
 
 #pragma region "Send and Receive from MQTT"
@@ -72,6 +76,10 @@ void sendUpdateToMQTTServer(char locTime[9])
   #ifdef WLEDTag
     #include "WLED\ERSWledSendMessage.h"
   #endif  
+  #ifdef REEDTag
+    #include "REED\ERSReedSendMessage.h"
+  #endif
+  
 #pragma endregion
 //////////////////////////
 
@@ -122,6 +130,10 @@ void setup()
 // WLED Setup is just call to setup functions
 #ifdef WLEDTag
   #include "WLED\ERSWledSetup.h"
+#endif
+
+#ifdef REEDTag
+  #include "REED\ERSReedSetup.h"
 #endif
 //////////////////////////
 
@@ -179,6 +191,10 @@ void loop()
   #ifdef WLEDTag
     #include "WLED\ERSWledLoop.h"
   #endif
+  #ifdef REEDTag
+    #include "REED\ERSReedLoop.h"
+  #endif
+
 #pragma endregion // end Functionality to execute on main loop (Core 1)
 //////////////////////////
 
