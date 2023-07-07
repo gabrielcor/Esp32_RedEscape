@@ -184,7 +184,9 @@
             "65659247aa3d3a29"
         ],
         "x": 74,
-        "y": 79
+        "y": 79,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "926b25295ff0c140",
@@ -202,7 +204,9 @@
             "f36c6da1dffe58a7"
         ],
         "x": 994,
-        "y": 59
+        "y": 59,
+        "w": 479,
+        "h": 122
     },
     {
         "id": "b3d4001bac0269f5",
@@ -240,7 +244,9 @@
             "2a3826161c24abd7"
         ],
         "x": 74,
-        "y": 239
+        "y": 239,
+        "w": 1212,
+        "h": 462
     },
     {
         "id": "83ec599797030eba",
@@ -254,9 +260,7 @@
             "eae1ab410ce116f7"
         ],
         "x": 54,
-        "y": 239,
-        "w": 232,
-        "h": 82
+        "y": 239
     },
     {
         "id": "857046f1705f6e09",
@@ -307,9 +311,7 @@
             "18404cad9ee52512"
         ],
         "x": 244,
-        "y": 179,
-        "w": 462,
-        "h": 122
+        "y": 179
     },
     {
         "id": "7f19e7ce3ba183da",
@@ -382,10 +384,10 @@
             "a608d62001107f7d",
             "e5e56896fb6777eb"
         ],
-        "x": 134,
-        "y": 459,
-        "w": 512,
-        "h": 162
+        "x": 54,
+        "y": 559,
+        "w": 532,
+        "h": 202
     },
     {
         "id": "60aa0fe460322fc9",
@@ -418,6 +420,27 @@
         "y": 119,
         "w": 123,
         "h": 82
+    },
+    {
+        "id": "67b341b707206f81",
+        "type": "group",
+        "z": "36ad750621f58350",
+        "name": "Audio cue",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f1e0b406ffdd1a58",
+            "21fb12cc335e95bb",
+            "90e681b6ad4f4aba",
+            "ccf81691e40a862a",
+            "2d36644e71951fa4",
+            "6ae9f8463951f36b"
+        ],
+        "x": 674,
+        "y": 639,
+        "w": 512,
+        "h": 202
     },
     {
         "id": "45013fdfd43f76cb",
@@ -607,7 +630,7 @@
     {
         "id": "8f886ae1479c4797",
         "type": "ui_group",
-        "name": "REED",
+        "name": "WLED",
         "tab": "7d66f574.b154cc",
         "order": 3,
         "disp": false,
@@ -651,6 +674,17 @@
         "willMsg": {},
         "userProps": "",
         "sessionExpiry": ""
+    },
+    {
+        "id": "487ff8a5c1e2834b",
+        "type": "ui_group",
+        "name": "REED",
+        "tab": "7d66f574.b154cc",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "197160bd5c9b62c4",
@@ -3233,7 +3267,7 @@
         "order": 1,
         "width": "6",
         "height": "4",
-        "format": "<md-card-title>\n    <md-card-title-text>\n        <p class=\"md-headline\">{{msg.payload.name}}</p>\n    </md-card-title-text>\n    <span ng-class=\"msg.payload.state=='SOLVED' ? 'fa fa-unlock fa-2x' : 'fa fa-lock fa-2x'\"></span>\n</md-card-title>\n<md-card-content>\n    <div ng-style=\"{width:'100%',height:'8px','background-color':msg.payload.state=='SOLVED' ? 'green' : 'red'}\" ></div>\n    <p>\n        {{msg.payload.description?msg.payload.description:'Unknown'}}\n<br>\n        {{msg.payload.id?msg.payload.id:'Unknown'}}\n<br>\n        {{msg.payload.deviceName?msg.payload.deviceName:'Unknown'}}\n<br>\n        {{msg.payload.rgb?msg.payload.rgb:'Unknown'}}\n<br>\n        {{msg.payload.command?msg.payload.command:'Unknown'}}\n    </p>\n    <div style=\"text-align:center\">\n        <span style=\"font-size: 2em;\">&nbsp;</span>\n    </div>\n</md-card-content>",
+        "format": "<md-card-title>\n    <md-card-title-text>\n        <p class=\"md-headline\">{{msg.payload.name}}</p>\n    </md-card-title-text>\n    <span ng-class=\"msg.payload.state=='SOLVED' ? 'fa fa-unlock fa-2x' : 'fa fa-lock fa-2x'\"></span>\n</md-card-title>\n<md-card-content>\n    <div ng-style=\"{width:'100%',height:'8px','background-color':msg.payload.state=='SOLVED' ? 'green' : 'red'}\" ></div>\n    <p>\n        {{msg.payload.description?msg.payload.description:'Unknown'}}\n<br>\n        {{msg.payload.id?msg.payload.id:'Unknown'}}\n        - {{msg.payload.time?msg.payload.time:'Not connected'}}\n<br>\n        {{msg.payload.deviceName?msg.payload.deviceName:'Unknown'}}\n<br>\n        {{msg.payload.rgb?msg.payload.rgb:'Unknown'}}\n<br>\n        {{msg.payload.command?msg.payload.command:'Unknown'}}\n    </p>\n    <div style=\"text-align:center\">\n        <span style=\"font-size: 2em;\">&nbsp;</span>\n    </div>\n</md-card-content>",
         "storeOutMessages": false,
         "fwdInMessages": false,
         "resendOnRefresh": true,
@@ -3605,19 +3639,19 @@
         "type": "ui_template",
         "z": "36ad750621f58350",
         "g": "03205d386d5da0a8",
-        "group": "8f886ae1479c4797",
+        "group": "487ff8a5c1e2834b",
         "name": "Button Panel",
         "order": 1,
         "width": "6",
         "height": "4",
-        "format": "<md-card-title>\n    <md-card-title-text>\n        <p class=\"md-headline\">{{msg.payload.name}}</p>\n    </md-card-title-text>\n    <span ng-class=\"msg.payload.state=='SOLVED' ? 'fa fa-unlock fa-2x' : 'fa fa-lock fa-2x'\"></span>\n</md-card-title>\n<md-card-content>\n    <div ng-style=\"{width:'100%',height:'8px','background-color':msg.payload.state=='SOLVED' ? 'green' : 'red'}\" ></div>\n    <p>\n        {{msg.payload.description?msg.payload.description:'Unknown'}}\n<br>\n        {{msg.payload.id?msg.payload.id:'Unknown'}}\n<br>\n        {{msg.payload.deviceName?msg.payload.deviceName:'Unknown'}}\n<br>\n        {{msg.payload.REEDsensorValues?msg.payload.REEDsensorValues:'Unknown'}}\n<br>\n        {{msg.payload.REEDsensorState?msg.payload.REEDsensorState:'Unknown'}}\n    </p>\n    <div style=\"text-align:center\">\n        <span style=\"font-size: 2em;\">&nbsp;</span>\n    </div>\n</md-card-content>",
+        "format": "<md-card-title>\n    <md-card-title-text>\n        <p class=\"md-headline\">{{msg.payload.name}}</p>\n    </md-card-title-text>\n    <span ng-class=\"msg.payload.state=='SOLVED' ? 'fa fa-unlock fa-2x' : 'fa fa-lock fa-2x'\"></span>\n</md-card-title>\n<md-card-content>\n    <div ng-style=\"{width:'100%',height:'8px','background-color':msg.payload.state=='SOLVED' ? 'green' : 'red'}\" ></div>\n    <p>\n        {{msg.payload.description?msg.payload.description:'Unknown'}}\n<br>\n        {{msg.payload.id?msg.payload.id:'Unknown'}}\n        - {{msg.payload.time?msg.payload.time:'Unknown'}}\n<br>\n        {{msg.payload.deviceName?msg.payload.deviceName:'Unknown'}}\n<br>\n        {{msg.payload.REEDsensorValues?msg.payload.REEDsensorValues:'Unknown'}}\n<br>\n        {{msg.payload.REEDsensorState?msg.payload.REEDsensorState:'Unknown'}}\n    </p>\n    <div style=\"text-align:center\">\n        <span style=\"font-size: 2em;\">&nbsp;</span>\n    </div>\n</md-card-content>",
         "storeOutMessages": false,
         "fwdInMessages": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 550,
-        "y": 580,
+        "x": 490,
+        "y": 720,
         "wires": [
             []
         ]
@@ -3636,11 +3670,12 @@
         "rap": true,
         "rh": 0,
         "inputs": 1,
-        "x": 360,
-        "y": 580,
+        "x": 280,
+        "y": 680,
         "wires": [
             [
-                "cab7d3a64a6b37f8"
+                "cab7d3a64a6b37f8",
+                "ccf81691e40a862a"
             ]
         ]
     },
@@ -3656,8 +3691,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 280,
-        "y": 500,
+        "x": 200,
+        "y": 600,
         "wires": [
             [
                 "a608d62001107f7d"
@@ -3696,6 +3731,148 @@
         "x": 995,
         "y": 160,
         "wires": []
+    },
+    {
+        "id": "f1e0b406ffdd1a58",
+        "type": "ui_audio",
+        "z": "36ad750621f58350",
+        "g": "67b341b707206f81",
+        "name": "ABRISTE LA TAPA",
+        "group": "487ff8a5c1e2834b",
+        "voice": "Microsoft Paola Online (Natural) - Spanish (Venezuela)",
+        "always": true,
+        "x": 1070,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "21fb12cc335e95bb",
+        "type": "switch",
+        "z": "36ad750621f58350",
+        "g": "67b341b707206f81",
+        "name": "Box Open",
+        "property": "payload.REEDsensorState",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 880,
+        "y": 680,
+        "wires": [
+            [
+                "90e681b6ad4f4aba"
+            ],
+            [
+                "6ae9f8463951f36b"
+            ]
+        ]
+    },
+    {
+        "id": "90e681b6ad4f4aba",
+        "type": "change",
+        "z": "36ad750621f58350",
+        "g": "67b341b707206f81",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "TAPA ABIERTA",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 740,
+        "wires": [
+            [
+                "2d36644e71951fa4"
+            ]
+        ]
+    },
+    {
+        "id": "ccf81691e40a862a",
+        "type": "rbe",
+        "z": "36ad750621f58350",
+        "g": "67b341b707206f81",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload.REEDsensorState",
+        "topi": "topic",
+        "x": 750,
+        "y": 680,
+        "wires": [
+            [
+                "21fb12cc335e95bb"
+            ]
+        ]
+    },
+    {
+        "id": "2d36644e71951fa4",
+        "type": "ui_text",
+        "z": "36ad750621f58350",
+        "g": "67b341b707206f81",
+        "group": "487ff8a5c1e2834b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1070,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "6ae9f8463951f36b",
+        "type": "change",
+        "z": "36ad750621f58350",
+        "g": "67b341b707206f81",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "TAPA CERRADA",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 800,
+        "wires": [
+            [
+                "2d36644e71951fa4"
+            ]
+        ]
     },
     {
         "id": "1aaf6cfe14348092",
