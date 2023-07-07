@@ -45,7 +45,7 @@ void processMessage(char *topic, byte *payload, unsigned int length)
 
   // Create a JSON document from the MQTT message received. Note best practice is NOT to have a reusable
   // JSON document, but create a new one each time it is needed.  https://arduinojson.org/v6/assistant/
-  StaticJsonDocument<128> jsonDoc;
+  StaticJsonDocument<512> jsonDoc;
   deserializeJson(jsonDoc, payload, length);
   // Do whatever we need to do with the message we received
   receiveUpdate(jsonDoc);

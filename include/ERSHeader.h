@@ -18,7 +18,7 @@ enum State
 };
 State state = Initializing;
 
-const int secondsToUpdateServer = 10; // how many seconds between sending MQTT updates to server
+int secondsToUpdateServer = 10; // how many seconds between sending MQTT updates to server
 static uint8_t lastSecondT = 99;      // used to detect when time has passed between updates
 
 // WIFI Config

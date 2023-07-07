@@ -48,6 +48,18 @@ if (jsonDoc["command"] == "INITIALIZERESULT") // Server asks for init
         Serial.print("Device Name changed to:");
         Serial.println(deviceName);
     }
+    // do the same as above but for secondsToUpdateServer
+    if (jsonDoc["secondsToUpdateServer"] != nullptr)
+    {
+      // assign secondsToUpdateServer from jsonDoc to an int variable
+      int tmpsecondsToUpdateServer = jsonDoc["secondsToUpdateServer"];
+      secondsToUpdateServer = tmpsecondsToUpdateServer;
+      Serial.print("Seconds to update server changed to:");
+      Serial.println(secondsToUpdateServer);
+    }
+    
+
+
   }
 //////////////////////////
 #pragma region "Add code to act upon message received from ERS Server for each installed functionality"
