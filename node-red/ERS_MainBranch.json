@@ -77,6 +77,22 @@
         "env": []
     },
     {
+        "id": "3b387bd86a8412e5",
+        "type": "tab",
+        "label": "ESRS_Test_Mock",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f34a734e23ab2adb",
+        "type": "tab",
+        "label": "UPC emulator",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "063501cbf8d4d96b",
         "type": "group",
         "z": "350f3f1be5bf834e",
@@ -455,6 +471,25 @@
         "h": 202
     },
     {
+        "id": "20cf7a31fd07c7de",
+        "type": "group",
+        "z": "f34a734e23ab2adb",
+        "name": "Emulate UPC API",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e4497c21a570e794",
+            "89d13ab50091906a",
+            "6ba2f25e60f5ab6c",
+            "60929ae8deb96abd"
+        ],
+        "x": 174,
+        "y": 499,
+        "w": 712,
+        "h": 82
+    },
+    {
         "id": "45013fdfd43f76cb",
         "type": "ui_spacer",
         "z": "350f3f1be5bf834e",
@@ -705,6 +740,37 @@
         "tab": "7d66f574.b154cc",
         "order": 3,
         "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a6b704e571129787",
+        "type": "ui_group",
+        "name": "ESRS-Mock-Test",
+        "tab": "7d66f574.b154cc",
+        "order": 4,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7f2947c85d1fbc50",
+        "type": "ui_tab",
+        "name": "UPC Emulators",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f1caa4f5e2c54ed0",
+        "type": "ui_group",
+        "name": "Hall Sensor 01",
+        "tab": "7f2947c85d1fbc50",
+        "order": 1,
+        "disp": true,
         "width": "6",
         "collapse": false,
         "className": ""
@@ -1733,7 +1799,8 @@
             "75a596869f308dab",
             "fde61d47216f1287",
             "35e08daeabc5fa71",
-            "af0afab53c87e0ad"
+            "af0afab53c87e0ad",
+            "40d25260ba98c7df"
         ],
         "x": 495,
         "y": 480,
@@ -1835,7 +1902,8 @@
             "c4a8de8b032253c9",
             "d22e738b256cdec6",
             "eb7d0ddb30a55c18",
-            "cae864a2b6640d37"
+            "cae864a2b6640d37",
+            "40d25260ba98c7df"
         ],
         "x": 295,
         "y": 120,
@@ -1850,7 +1918,8 @@
         "mode": "link",
         "links": [
             "75a596869f308dab",
-            "0ebb81d8a4618708"
+            "0ebb81d8a4618708",
+            "518590794501de1b"
         ],
         "x": 295,
         "y": 180,
@@ -3970,7 +4039,7 @@
             "c7c4685c94a69e6f"
         ],
         "x": 145,
-        "y": 200,
+        "y": 140,
         "wires": [
             [
                 "8138e05905f687ac"
@@ -4118,6 +4187,367 @@
         "wires": [
             [
                 "df3c1dacf6fb708e"
+            ]
+        ]
+    },
+    {
+        "id": "518590794501de1b",
+        "type": "link in",
+        "z": "3b387bd86a8412e5",
+        "name": "link in 2",
+        "links": [
+            "c7c4685c94a69e6f"
+        ],
+        "x": 145,
+        "y": 220,
+        "wires": [
+            [
+                "395b69b4893d6bc1"
+            ]
+        ]
+    },
+    {
+        "id": "d6af169e13b9b55b",
+        "type": "http request",
+        "z": "3b387bd86a8412e5",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 510,
+        "y": 280,
+        "wires": [
+            [
+                "8fb9c6fc474732f7"
+            ]
+        ]
+    },
+    {
+        "id": "9d6fdf7ddf13b99e",
+        "type": "debug",
+        "z": "3b387bd86a8412e5",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "8fb9c6fc474732f7",
+        "type": "rbe",
+        "z": "3b387bd86a8412e5",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 590,
+        "y": 440,
+        "wires": [
+            [
+                "96e6e7bc78b718c8"
+            ]
+        ]
+    },
+    {
+        "id": "395b69b4893d6bc1",
+        "type": "change",
+        "z": "3b387bd86a8412e5",
+        "name": "set msg request",
+        "rules": [
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "http://127.0.0.1:1880/mock/001?command=state",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "d6af169e13b9b55b"
+            ]
+        ]
+    },
+    {
+        "id": "07d70b2053bbb9f8",
+        "type": "ui_template",
+        "z": "3b387bd86a8412e5",
+        "group": "a6b704e571129787",
+        "name": "Button Panel",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "format": "<md-card-title>\n    <md-card-title-text>\n        <p class=\"md-headline\">{{msg.payload.deviceName}}</p>\n    </md-card-title-text>\n    <span ng-class=\"msg.payload.universal_state.machine_state=='2' ? 'fa fa-unlock fa-2x' : 'fa fa-lock fa-2x'\"></span>\n</md-card-title>\n<md-card-content>\n    <div ng-style=\"{width:'100%',height:'8px','background-color':msg.payload.universal_state.machine_state=='2' ? 'green' : 'red'}\" ></div>\n    <p>\n        {{msg.payload.description?msg.payload.description:'Unknown'}}\n<br>\n        {{msg.payload.id?msg.payload.id:'Unknown'}}\n        - {{msg.payload.time?msg.payload.time:'Unknown'}}\n<br>\n        {{msg.payload.universal_state.input_states?universal_state.input_states:'Unknown'}}\n    </p>\n    <div style=\"text-align:center\">\n        <span style=\"font-size: 2em;\">&nbsp;</span>\n    </div>\n</md-card-content>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 930,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3b0cf453dbafdd83",
+        "type": "function",
+        "z": "3b387bd86a8412e5",
+        "name": "function 2",
+        "func": "var payload = msg.payload; //get payload\nvar id = msg.payload.id;\npayload.deviceName = \"ESRS-MOCKTEST\";\npayload.description = \"Contact & Hall Sensor\";\n\nvar d= new Date();\npayload.time = d.toLocaleTimeString();\nmsg.payload = payload;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 580,
+        "wires": [
+            [
+                "9d6fdf7ddf13b99e",
+                "07d70b2053bbb9f8"
+            ]
+        ]
+    },
+    {
+        "id": "96e6e7bc78b718c8",
+        "type": "json",
+        "z": "3b387bd86a8412e5",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 710,
+        "y": 340,
+        "wires": [
+            [
+                "3b0cf453dbafdd83"
+            ]
+        ]
+    },
+    {
+        "id": "e4497c21a570e794",
+        "type": "http in",
+        "z": "f34a734e23ab2adb",
+        "g": "20cf7a31fd07c7de",
+        "name": "Hall Sensor",
+        "url": "/mock/001",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 270,
+        "y": 540,
+        "wires": [
+            [
+                "89d13ab50091906a"
+            ]
+        ]
+    },
+    {
+        "id": "89d13ab50091906a",
+        "type": "change",
+        "z": "f34a734e23ab2adb",
+        "g": "20cf7a31fd07c7de",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"id\":\"99129022401001\",\"sv\":\"01.01.06\",\"hv\":\"5\",\"puzzle_state\":{\"number_of_steps\":\"10\",\"current_step\":\"10\",\"attempt_number\":\"0\"},\"universal_state\":{\"machine_state\":\"2\",\"output_state\":\"1\",\"input_states\":\"65534\",\"overwritten_inputs\":\"0\"},\"message\":{\"type\":\"info\",\"content\":\"OK!\"}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 540,
+        "wires": [
+            [
+                "60929ae8deb96abd"
+            ]
+        ]
+    },
+    {
+        "id": "6ba2f25e60f5ab6c",
+        "type": "http response",
+        "z": "f34a734e23ab2adb",
+        "g": "20cf7a31fd07c7de",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 810,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "60929ae8deb96abd",
+        "type": "function",
+        "z": "f34a734e23ab2adb",
+        "g": "20cf7a31fd07c7de",
+        "name": "function 3",
+        "func": "var payload = msg.payload; //get payload\npayload.universal_state.machine_state = flow.get(\"deviceState\");\n\nmsg.payload = payload;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 540,
+        "wires": [
+            [
+                "6ba2f25e60f5ab6c"
+            ]
+        ]
+    },
+    {
+        "id": "40d25260ba98c7df",
+        "type": "link in",
+        "z": "f34a734e23ab2adb",
+        "name": "link in 3",
+        "links": [
+            "442e7bc38dd4c3b7",
+            "758310f9eb5818de"
+        ],
+        "x": 215,
+        "y": 100,
+        "wires": [
+            [
+                "6da2aadb1065f060"
+            ]
+        ]
+    },
+    {
+        "id": "6da2aadb1065f060",
+        "type": "change",
+        "z": "f34a734e23ab2adb",
+        "name": "Initialize Device",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceState",
+                "pt": "flow",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e9d1d412b322641b",
+        "type": "ui_button",
+        "z": "f34a734e23ab2adb",
+        "name": "",
+        "group": "f1caa4f5e2c54ed0",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "RESET",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 240,
+        "y": 220,
+        "wires": [
+            [
+                "6da2aadb1065f060"
+            ]
+        ]
+    },
+    {
+        "id": "53618b53ce69988c",
+        "type": "change",
+        "z": "f34a734e23ab2adb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceState",
+                "pt": "flow",
+                "to": "2",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c3f77b0195a85b35",
+        "type": "ui_button",
+        "z": "f34a734e23ab2adb",
+        "name": "",
+        "group": "f1caa4f5e2c54ed0",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "SOLVE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 260,
+        "y": 320,
+        "wires": [
+            [
+                "53618b53ce69988c"
             ]
         ]
     }

@@ -64,7 +64,46 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Get UPC state",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.1.124?command=state",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"124"
+							],
+							"query": [
+								{
+									"key": "command",
+									"value": "state"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/json"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"70129022401520\",\n    \"sv\": \"01.01.06\",\n    \"hv\": \"5\",\n    \"puzzle_state\": {\n        \"number_of_steps\": \"10\",\n        \"current_step\": \"10\",\n        \"attempt_number\": \"0\"\n    },\n    \"universal_state\": {\n        \"machine_state\": \"2\",\n        \"output_state\": \"1\",\n        \"input_states\": \"65534\",\n        \"overwritten_inputs\": \"0\"\n    },\n    \"message\": {\n        \"type\": \"info\",\n        \"content\": \"OK!\"\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "UPC input override",
