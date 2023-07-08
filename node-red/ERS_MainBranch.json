@@ -1,0 +1,4124 @@
+[
+    {
+        "id": "a1538f107b6f4fdc",
+        "type": "tab",
+        "label": "ERS_MQTT Receive",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "29f4ff9c6fcbf566",
+        "type": "tab",
+        "label": "ERS_MQTT Send",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e1f045082e6b20f1",
+        "type": "tab",
+        "label": "ERS_Update State",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "31a7412f.61a816",
+        "type": "tab",
+        "label": "ERS_Logging",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "350f3f1be5bf834e",
+        "type": "tab",
+        "label": "Main",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "6515d38c55026b61",
+        "type": "tab",
+        "label": "In-Game Display",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e6bf3e66f1775fc0",
+        "type": "tab",
+        "label": "Process Init Messages From Devices",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d470efbc7020c379",
+        "type": "tab",
+        "label": "WLED Ring",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "36ad750621f58350",
+        "type": "tab",
+        "label": "REED",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7cec459b408f9e65",
+        "type": "tab",
+        "label": "ESRS_Test",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "063501cbf8d4d96b",
+        "type": "group",
+        "z": "350f3f1be5bf834e",
+        "name": "System Events",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "aa84b0b3f6f24d4c",
+            "e2d366190836429a",
+            "758310f9eb5818de",
+            "c7c4685c94a69e6f",
+            "34e41184596a8cc2",
+            "87d09c692b8687fc"
+        ],
+        "x": 34,
+        "y": 79,
+        "w": 302,
+        "h": 202
+    },
+    {
+        "id": "88186d2d626ead90",
+        "type": "group",
+        "z": "350f3f1be5bf834e",
+        "name": "Configuration",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c60ade8d2522e8b4",
+            "42d9fcf53b80577d"
+        ],
+        "x": 374,
+        "y": 79,
+        "w": 312,
+        "h": 82
+    },
+    {
+        "id": "1d39f27b3d601c72",
+        "type": "group",
+        "z": "350f3f1be5bf834e",
+        "name": "Game State",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "197160bd5c9b62c4",
+            "0deb9fba3b6f3c48",
+            "c1d322a0a9c2b4ac",
+            "4a56258a14858018",
+            "d2bfa31323cf7730",
+            "98ab54042d4213d0",
+            "342f119e8f4998e2",
+            "890f86205d47ef77",
+            "ef582930fa6e08ef",
+            "4e6a3fb6ac8e60de",
+            "4a863b19c2050c0a",
+            "4f3e8b2d7209c3c4",
+            "442e7bc38dd4c3b7",
+            "06ef4faf69df41d0"
+        ],
+        "x": 34,
+        "y": 319,
+        "w": 672,
+        "h": 202
+    },
+    {
+        "id": "c870415b6658eca9",
+        "type": "group",
+        "z": "350f3f1be5bf834e",
+        "name": "Timer",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4a9c0dfb1f0b9b85",
+            "c8fb5887561b01d3",
+            "39e77fdf6d2e5543",
+            "75a596869f308dab",
+            "e7252fb6a4819ecf",
+            "f457b1998a5d01b9",
+            "2ce811328a35a524",
+            "a98c2ab0de57b58a",
+            "32180624627a2049",
+            "f93150b86a48dd2b",
+            "0c9d3ef3bf7c7bc0",
+            "465e64fa2453bb6a",
+            "6e87bf8ee8b2ac47",
+            "f020309c907b1b75",
+            "59b3354d12a64752",
+            "65c75d67cdeec25c"
+        ],
+        "x": 34,
+        "y": 559,
+        "w": 812,
+        "h": 342
+    },
+    {
+        "id": "77e43472cf997f8c",
+        "type": "group",
+        "z": "6515d38c55026b61",
+        "name": "Game Time",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "be78aac3fbf7d64d",
+            "0c35049764e708e8",
+            "4da897978dfdd598",
+            "3ed1561fe19b6b12",
+            "cfaf0dac6b827719",
+            "5b7d60f32418357b",
+            "65659247aa3d3a29"
+        ],
+        "x": 74,
+        "y": 79,
+        "w": 792,
+        "h": 122
+    },
+    {
+        "id": "926b25295ff0c140",
+        "type": "group",
+        "z": "6515d38c55026b61",
+        "name": "Send to display",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e45ba9afa3187d8c",
+            "425d092a12e47ffa",
+            "06448b17746de470",
+            "40fc72fba7aa7963",
+            "f36c6da1dffe58a7"
+        ],
+        "x": 994,
+        "y": 59,
+        "w": 479,
+        "h": 122
+    },
+    {
+        "id": "b3d4001bac0269f5",
+        "type": "group",
+        "z": "6515d38c55026b61",
+        "name": "Dynamic Content",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a9657f29265a19cb",
+            "0294e6a1d24e3b66",
+            "1632bfb75500e5ce",
+            "9fb2034f7ba9183c",
+            "ad976867a4b58c55",
+            "cbe206eb86d19c7d",
+            "ba40122028b2f2a1",
+            "be849fb620482221",
+            "85e76089087dda18",
+            "15a7cc559a0c8bdc",
+            "f674e4bdc6143df1",
+            "bb50386bbfe5315a",
+            "70947c7a5b06346a",
+            "4fe4d112c4b7ecf6",
+            "a9df44cee943b514",
+            "c170944ad7cca709",
+            "fa2877c68a83af51",
+            "7c63674c8c3c346f",
+            "9894e6db90e8a547",
+            "0544439cd5c8978b",
+            "347bfab840458c38",
+            "b2afdb1ebfa49b25",
+            "098c7102683ef084",
+            "0dc04fcff8161629",
+            "2a3826161c24abd7"
+        ],
+        "x": 74,
+        "y": 239,
+        "w": 1212,
+        "h": 462
+    },
+    {
+        "id": "83ec599797030eba",
+        "type": "group",
+        "z": "a1538f107b6f4fdc",
+        "name": "Receive updates from device",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "eae1ab410ce116f7"
+        ],
+        "x": 54,
+        "y": 239,
+        "w": 232,
+        "h": 82
+    },
+    {
+        "id": "857046f1705f6e09",
+        "type": "group",
+        "z": "d470efbc7020c379",
+        "name": "Initial state set on system startup / reset",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "eb7d0ddb30a55c18",
+            "35e08daeabc5fa71",
+            "936acb30e1aa36d2",
+            "c86c5b73d7b070d2"
+        ],
+        "x": 274,
+        "y": 99,
+        "w": 322,
+        "h": 162
+    },
+    {
+        "id": "217067ffa17d7c85",
+        "type": "group",
+        "z": "d470efbc7020c379",
+        "name": "Dashboard overrides",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "717ad61c6b53591d",
+            "8a055186d1dd9b0f"
+        ],
+        "x": 114,
+        "y": 319,
+        "w": 172,
+        "h": 142
+    },
+    {
+        "id": "287cddd6953c1cbd",
+        "type": "group",
+        "z": "29f4ff9c6fcbf566",
+        "name": "Send updates to device",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9b390b713b48f7f6",
+            "18404cad9ee52512"
+        ],
+        "x": 244,
+        "y": 179,
+        "w": 462,
+        "h": 122
+    },
+    {
+        "id": "7f19e7ce3ba183da",
+        "type": "group",
+        "z": "d470efbc7020c379",
+        "name": "Send To MQTT",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "46fe3fba38d8ec55"
+        ],
+        "x": 1094,
+        "y": 419,
+        "w": 103,
+        "h": 82
+    },
+    {
+        "id": "942a7bbbbab86018",
+        "type": "group",
+        "z": "d470efbc7020c379",
+        "name": "Update dashboard",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5cf9f3f76f7e865f",
+            "c2d8376eba5628a0",
+            "e59eded70d330ae4"
+        ],
+        "x": 74,
+        "y": 659,
+        "w": 512,
+        "h": 162
+    },
+    {
+        "id": "9be3f485d4cd3d06",
+        "type": "group",
+        "z": "36ad750621f58350",
+        "name": "Initial state set on system startup / reset",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "cae864a2b6640d37",
+            "af0afab53c87e0ad",
+            "5dfb35929ba754d0",
+            "75ff2e91104cf3d9"
+        ],
+        "x": 274,
+        "y": 159,
+        "w": 322,
+        "h": 162
+    },
+    {
+        "id": "03205d386d5da0a8",
+        "type": "group",
+        "z": "36ad750621f58350",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "cab7d3a64a6b37f8",
+            "a608d62001107f7d",
+            "e5e56896fb6777eb"
+        ],
+        "x": 54,
+        "y": 559,
+        "w": 532,
+        "h": 202
+    },
+    {
+        "id": "60aa0fe460322fc9",
+        "type": "group",
+        "z": "d470efbc7020c379",
+        "name": "Update Flow State",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "67ed85c7985c08f7"
+        ],
+        "x": 894,
+        "y": 159,
+        "w": 123,
+        "h": 82
+    },
+    {
+        "id": "8db576f9d8512bd2",
+        "type": "group",
+        "z": "36ad750621f58350",
+        "name": "Update Flow State",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f041921445dae881"
+        ],
+        "x": 954,
+        "y": 119,
+        "w": 123,
+        "h": 82
+    },
+    {
+        "id": "67b341b707206f81",
+        "type": "group",
+        "z": "36ad750621f58350",
+        "name": "Audio cue",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f1e0b406ffdd1a58",
+            "21fb12cc335e95bb",
+            "90e681b6ad4f4aba",
+            "ccf81691e40a862a",
+            "2d36644e71951fa4",
+            "6ae9f8463951f36b"
+        ],
+        "x": 674,
+        "y": 639,
+        "w": 512,
+        "h": 202
+    },
+    {
+        "id": "45013fdfd43f76cb",
+        "type": "ui_spacer",
+        "z": "350f3f1be5bf834e",
+        "name": "spacer",
+        "group": "f08ba3d0ec182a89",
+        "order": 6,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "f08ba3d0ec182a89",
+        "type": "ui_group",
+        "name": "Game Control",
+        "tab": "a38c3d325d960343",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a38c3d325d960343",
+        "type": "ui_tab",
+        "name": "Main",
+        "icon": "dashboard",
+        "order": 0,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fdc03bbb8e995276",
+        "type": "ui_group",
+        "name": "In-Game Display",
+        "tab": "a38c3d325d960343",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "77085fa9048e360b",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "eed1a8a6.8d8878",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "b9a603a9.4c8c9",
+        "order": 1,
+        "disp": false,
+        "width": "30",
+        "collapse": false
+    },
+    {
+        "id": "125f6c81.60151b",
+        "type": "mqtt-broker",
+        "name": "MQTT Server",
+        "broker": "192.168.5.160",
+        "port": "1883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b9a603a9.4c8c9",
+        "type": "ui_tab",
+        "name": "Logging",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8f886ae1479c4797",
+        "type": "ui_group",
+        "name": "WLED",
+        "tab": "7d66f574.b154cc",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7d66f574.b154cc",
+        "type": "ui_tab",
+        "name": "Devices",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e21e4642.c12f6",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.5.160",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "487ff8a5c1e2834b",
+        "type": "ui_group",
+        "name": "ESRS-GC",
+        "tab": "7d66f574.b154cc",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1ee549352e701131",
+        "type": "ui_group",
+        "name": "REED",
+        "tab": "7d66f574.b154cc",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "eae1ab410ce116f7",
+        "type": "mqtt in",
+        "z": "a1538f107b6f4fdc",
+        "g": "83ec599797030eba",
+        "name": "MQTT FromDevice",
+        "topic": "FromDevice/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "125f6c81.60151b",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 170,
+        "y": 280,
+        "wires": [
+            [
+                "30db58981b73ee5f"
+            ]
+        ]
+    },
+    {
+        "id": "30db58981b73ee5f",
+        "type": "link out",
+        "z": "a1538f107b6f4fdc",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "7975934d833d8651"
+        ],
+        "x": 435,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9b390b713b48f7f6",
+        "type": "mqtt out",
+        "z": "29f4ff9c6fcbf566",
+        "g": "287cddd6953c1cbd",
+        "name": "MQTT ToDevice",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "125f6c81.60151b",
+        "x": 600,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "18404cad9ee52512",
+        "type": "link in",
+        "z": "29f4ff9c6fcbf566",
+        "g": "287cddd6953c1cbd",
+        "name": "in Send to MQTT",
+        "links": [
+            "46fe3fba38d8ec55",
+            "9279911921b45e08"
+        ],
+        "x": 285,
+        "y": 260,
+        "wires": [
+            [
+                "9b390b713b48f7f6"
+            ]
+        ]
+    },
+    {
+        "id": "d244cacd33b48c04",
+        "type": "json",
+        "z": "e1f045082e6b20f1",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 330,
+        "y": 220,
+        "wires": [
+            [
+                "b0bbeb33dee663d4"
+            ]
+        ]
+    },
+    {
+        "id": "b0bbeb33dee663d4",
+        "type": "function",
+        "z": "e1f045082e6b20f1",
+        "name": "Parse JSON and update global state",
+        "func": "// The prop id is in the message\n// that's how we standarized communication\nvar propid = msg.payload[\"id\"];\n\n// Get the current stored value of this prop,\n// Or create a new entry if we didn't previously know about it\nvar prop = global.get(propid) || {};\n\n// Now loop over the incoming values and update the stored state\nvar count = 0;\nfor (var key in msg.payload) {\n  if (!(key == \"command\")) // don't save commands\n    {\n      if (msg.payload.hasOwnProperty(key)) {\n        prop[key] = msg.payload[key];\n        count++;\n    }\n  }\n}\n\n// Check if msg has a command\nif (msg.payload.hasOwnProperty(\"command\"))\n{\n  // if it is asking for initial config send it to the correct flow\n  var command = msg.payload[\"command\"];\n  if (command == \"INITIALIZE\")\n  {\n    msg.topic = \"Initialize/\" + propid;\n  }\n  else\n  {\n    msg.topic = \"Internal/\" + propid;\n  }\n}\nelse\n{\n  // Pass the updated status through the message flow\n  msg.topic = \"Internal/\"+propid;\n}\n\n\n// Save the global value again\nglobal.set(propid, prop);\n\nmsg.payload = prop;\n\n// Pass the value along the flow\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 380,
+        "wires": [
+            [
+                "f070c390e9e89c11"
+            ]
+        ]
+    },
+    {
+        "id": "7975934d833d8651",
+        "type": "link in",
+        "z": "e1f045082e6b20f1",
+        "name": "Update State In",
+        "links": [
+            "30db58981b73ee5f",
+            "67ed85c7985c08f7",
+            "f041921445dae881"
+        ],
+        "x": 195,
+        "y": 220,
+        "wires": [
+            [
+                "d244cacd33b48c04"
+            ]
+        ]
+    },
+    {
+        "id": "f070c390e9e89c11",
+        "type": "mqtt out",
+        "z": "e1f045082e6b20f1",
+        "name": "NotifyDeviceFlowViaMQTT",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e21e4642.c12f6",
+        "x": 980,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d36489b9.a97398",
+        "type": "file",
+        "z": "31a7412f.61a816",
+        "name": "Append to Log File",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1190,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c371def0.c41d4",
+        "type": "ui_switch",
+        "z": "31a7412f.61a816",
+        "name": "",
+        "label": "Logging",
+        "tooltip": "",
+        "group": "eed1a8a6.8d8878",
+        "order": 4,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 560,
+        "y": 100,
+        "wires": [
+            [
+                "8ab5d029.5fa83"
+            ]
+        ]
+    },
+    {
+        "id": "8ab5d029.5fa83",
+        "type": "change",
+        "z": "31a7412f.61a816",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "logging",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f0ef3a2.ba712c",
+        "type": "switch",
+        "z": "31a7412f.61a816",
+        "name": "",
+        "property": "logging",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 470,
+        "y": 340,
+        "wires": [
+            [
+                "511b6d84.e268c4"
+            ]
+        ]
+    },
+    {
+        "id": "511b6d84.e268c4",
+        "type": "function",
+        "z": "31a7412f.61a816",
+        "name": "Create Log Entry",
+        "func": "// Define a payload object with the fields required\n// for the log entry\nvar log_entry = {\n    \"time\": new Date(),\n    \"topic\": msg.topic,\n    \"payload\": msg.payload\n};\nmsg.payload = log_entry;\n\n// Specify the log file\nmsg.filename = \"/Node-REDscape/log.txt\";\n\n// Show the log entry below the editor node\nnode.status({fill:\"green\", shape:\"dot\", text:JSON.stringify(log_entry)});\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 750,
+        "y": 340,
+        "wires": [
+            [
+                "445cf6fe.4d8078",
+                "7831a90e10f09e75"
+            ]
+        ]
+    },
+    {
+        "id": "d1a37b5c.759ed",
+        "type": "comment",
+        "z": "31a7412f.61a816",
+        "name": "Toggle Logging On/Off",
+        "info": "",
+        "x": 600,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "c2f79075.e3d64",
+        "type": "ui_template",
+        "z": "31a7412f.61a816",
+        "group": "eed1a8a6.8d8878",
+        "name": "Dashboard Log",
+        "order": 3,
+        "width": "30",
+        "height": 2,
+        "format": "<div ng-repeat=\"line in msg.payload track by $index\">\n  <div ng-style=\"{'margin-bottom':'1em'}\">{{line}}</div>\n</div>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "templateScope": "local",
+        "x": 1240,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "445cf6fe.4d8078",
+        "type": "function",
+        "z": "31a7412f.61a816",
+        "name": "Update Log Display",
+        "func": "// Retrieve the existing log display\nvar logDisplay = flow.get(\"logDisplay\") || [];\n\n// Add the new log entry to the top \nlogDisplay.unshift(msg.payload);\n\n// Cap maximum size of the log display\nif(logDisplay.length > 100) {\n    // Remove the last element\n    logDisplay.pop();\n}\n\n// Save the updated log of entries\nflow.set(\"logDisplay\", logDisplay);\n\n// Pass the display along the flow\nmsg.payload = logDisplay;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1030,
+        "y": 280,
+        "wires": [
+            [
+                "c2f79075.e3d64"
+            ]
+        ]
+    },
+    {
+        "id": "f64afdb2.ae6738",
+        "type": "link in",
+        "z": "31a7412f.61a816",
+        "name": "Log",
+        "links": [
+            "171ea618.d8a322",
+            "8a4dffa5.a7935",
+            "b32763f3.44a74",
+            "c9289f5e.1fb3b8",
+            "dd31298f.6fb86",
+            "e70201fd67e55953"
+        ],
+        "x": 255,
+        "y": 340,
+        "wires": [
+            [
+                "4f0ef3a2.ba712c"
+            ]
+        ]
+    },
+    {
+        "id": "b1efbe93.6f8ea",
+        "type": "catch",
+        "z": "31a7412f.61a816",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 640,
+        "y": 560,
+        "wires": [
+            [
+                "7ad70abc.0f24a4"
+            ]
+        ]
+    },
+    {
+        "id": "7ad70abc.0f24a4",
+        "type": "debug",
+        "z": "31a7412f.61a816",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 810,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "81de3a97.ce63d8",
+        "type": "complete",
+        "z": "31a7412f.61a816",
+        "name": "",
+        "scope": [],
+        "uncaught": false,
+        "x": 630,
+        "y": 600,
+        "wires": [
+            [
+                "7ad70abc.0f24a4"
+            ]
+        ]
+    },
+    {
+        "id": "a1a518ec.9afe28",
+        "type": "comment",
+        "z": "31a7412f.61a816",
+        "name": "Exception Handling",
+        "info": "",
+        "x": 670,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "92a3d612.7206a",
+        "type": "ui_button",
+        "z": "31a7412f.61a816",
+        "name": "",
+        "group": "eed1a8a6.8d8878",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Clear Log",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "x": 560,
+        "y": 220,
+        "wires": [
+            [
+                "bf085b.4d65d7a8"
+            ]
+        ]
+    },
+    {
+        "id": "bf085b.4d65d7a8",
+        "type": "change",
+        "z": "31a7412f.61a816",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "logDisplay",
+                "pt": "flow",
+                "to": "[]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 220,
+        "wires": [
+            [
+                "445cf6fe.4d8078"
+            ]
+        ]
+    },
+    {
+        "id": "75358499.0d6b64",
+        "type": "comment",
+        "z": "31a7412f.61a816",
+        "name": "Clear the Log Display",
+        "info": "",
+        "x": 600,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "9593409f.b9608",
+        "type": "comment",
+        "z": "31a7412f.61a816",
+        "name": "Log event",
+        "info": "",
+        "x": 260,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "e4d4ff91.d3441",
+        "type": "comment",
+        "z": "31a7412f.61a816",
+        "name": "Only continue if logging enabled",
+        "info": "",
+        "x": 490,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "3cf3cc1a.468f24",
+        "type": "comment",
+        "z": "31a7412f.61a816",
+        "name": "Specify fields to log",
+        "info": "",
+        "x": 750,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1052466c.ae07d2",
+        "type": "comment",
+        "z": "31a7412f.61a816",
+        "name": "Send Log to Dashboard",
+        "info": "",
+        "x": 1050,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "a9e1b02b.620a08",
+        "type": "comment",
+        "z": "31a7412f.61a816",
+        "name": "Send Log to File",
+        "info": "",
+        "x": 1180,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "9d634736069dcc14",
+        "type": "ui_switch",
+        "z": "31a7412f.61a816",
+        "name": "",
+        "label": "Save to Logfile",
+        "tooltip": "",
+        "group": "eed1a8a6.8d8878",
+        "order": 4,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 1000,
+        "y": 100,
+        "wires": [
+            [
+                "8b08d1338508da81"
+            ]
+        ]
+    },
+    {
+        "id": "7831a90e10f09e75",
+        "type": "switch",
+        "z": "31a7412f.61a816",
+        "name": "",
+        "property": "useLogfile",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 970,
+        "y": 440,
+        "wires": [
+            [
+                "d36489b9.a97398"
+            ]
+        ]
+    },
+    {
+        "id": "8b08d1338508da81",
+        "type": "change",
+        "z": "31a7412f.61a816",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "useLogfile",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1220,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1052553f8c848d66",
+        "type": "mqtt in",
+        "z": "31a7412f.61a816",
+        "name": "",
+        "topic": "#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "125f6c81.60151b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 330,
+        "y": 560,
+        "wires": [
+            [
+                "e70201fd67e55953"
+            ]
+        ]
+    },
+    {
+        "id": "e70201fd67e55953",
+        "type": "link out",
+        "z": "31a7412f.61a816",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "f64afdb2.ae6738"
+        ],
+        "x": 435,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "92140a2795cba5bb",
+        "type": "comment",
+        "z": "31a7412f.61a816",
+        "name": "MQTT traffic",
+        "info": "",
+        "x": 350,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "ad8d062aaf3ea55f",
+        "type": "comment",
+        "z": "31a7412f.61a816",
+        "name": "Save log to file",
+        "info": "",
+        "x": 1000,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "189d4048132db79d",
+        "type": "aedes broker",
+        "z": "31a7412f.61a816",
+        "name": "mqtt broker",
+        "mqtt_port": 1883,
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "",
+        "mqtt_ws_path": "",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "persistence_bind": "memory",
+        "dburl": "",
+        "usetls": false,
+        "x": 330,
+        "y": 640,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "197160bd5c9b62c4",
+        "type": "ui_button",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "",
+        "group": "f08ba3d0ec182a89",
+        "order": 5,
+        "width": "2",
+        "height": 1,
+        "passthru": true,
+        "label": "Start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "fa-play",
+        "payload": "{\"msg\":{\"payload\":\"gamestart\",\"timeout\":600,\"warning\":30}}",
+        "payloadType": "json",
+        "topic": "/game",
+        "topicType": "str",
+        "x": 110,
+        "y": 360,
+        "wires": [
+            [
+                "98ab54042d4213d0"
+            ]
+        ]
+    },
+    {
+        "id": "0deb9fba3b6f3c48",
+        "type": "ui_button",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "",
+        "group": "f08ba3d0ec182a89",
+        "order": 3,
+        "width": "2",
+        "height": 1,
+        "passthru": true,
+        "label": "Stop",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "fa-stop",
+        "payload": "{     \"payload\": \"cancel\" }",
+        "payloadType": "json",
+        "topic": "/game",
+        "topicType": "str",
+        "x": 110,
+        "y": 420,
+        "wires": [
+            [
+                "342f119e8f4998e2"
+            ]
+        ]
+    },
+    {
+        "id": "c1d322a0a9c2b4ac",
+        "type": "ui_button",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "",
+        "group": "f08ba3d0ec182a89",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "Reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "orange",
+        "className": "",
+        "icon": "fa-fast-backward",
+        "payload": "{\"timeout\": 600 }",
+        "payloadType": "json",
+        "topic": "/game",
+        "topicType": "str",
+        "x": 110,
+        "y": 480,
+        "wires": [
+            [
+                "890f86205d47ef77"
+            ]
+        ]
+    },
+    {
+        "id": "4a56258a14858018",
+        "type": "change",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gameState",
+                "pt": "global",
+                "to": "playing",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "startTime",
+                "pt": "flow",
+                "to": "",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 360,
+        "wires": [
+            [
+                "ef582930fa6e08ef"
+            ]
+        ]
+    },
+    {
+        "id": "d2bfa31323cf7730",
+        "type": "change",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gameState",
+                "pt": "global",
+                "to": "stopped",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "elapsedTimeDelta",
+                "pt": "global",
+                "to": "$globalContext('elapsedTimeDelta') + $millis() - $flowContext('startTime')",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 420,
+        "wires": [
+            [
+                "4a863b19c2050c0a"
+            ]
+        ]
+    },
+    {
+        "id": "98ab54042d4213d0",
+        "type": "switch",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "",
+        "property": "gameState",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "playing",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 230,
+        "y": 360,
+        "wires": [
+            [
+                "4a56258a14858018"
+            ]
+        ]
+    },
+    {
+        "id": "342f119e8f4998e2",
+        "type": "switch",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "",
+        "property": "gameState",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "stopped",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 230,
+        "y": 420,
+        "wires": [
+            [
+                "d2bfa31323cf7730"
+            ]
+        ]
+    },
+    {
+        "id": "890f86205d47ef77",
+        "type": "change",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "elapsedTimeDelta",
+                "pt": "global",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "timeRemaining",
+                "pt": "global",
+                "to": "gameDuration",
+                "tot": "global"
+            },
+            {
+                "t": "set",
+                "p": "startTime",
+                "pt": "flow",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "timeElapsed",
+                "pt": "global",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 480,
+        "wires": [
+            [
+                "442e7bc38dd4c3b7"
+            ]
+        ]
+    },
+    {
+        "id": "c60ade8d2522e8b4",
+        "type": "function",
+        "z": "350f3f1be5bf834e",
+        "g": "88186d2d626ead90",
+        "name": "Initialise Global Vars",
+        "func": "global.set(\"gameState\", \"stopped\");\nglobal.set(\"gameDuration\", 3600000);\nglobal.set(\"elapsedTimeDelta\", 0);\nglobal.set(\"timeElapsed\", 0);\nglobal.set(\"timeRemaining\", 3600000);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 120,
+        "wires": [
+            [
+                "cd9c79c0f7ca4c12"
+            ]
+        ]
+    },
+    {
+        "id": "42d9fcf53b80577d",
+        "type": "link in",
+        "z": "350f3f1be5bf834e",
+        "g": "88186d2d626ead90",
+        "name": "",
+        "links": [
+            "758310f9eb5818de"
+        ],
+        "x": 415,
+        "y": 120,
+        "wires": [
+            [
+                "c60ade8d2522e8b4"
+            ]
+        ]
+    },
+    {
+        "id": "ef582930fa6e08ef",
+        "type": "link out",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "On Game Start",
+        "links": [
+            "65781ff6.32997",
+            "f64afdb2.ae6738",
+            "75a596869f308dab",
+            "fde61d47216f1287"
+        ],
+        "x": 495,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "4e6a3fb6ac8e60de",
+        "type": "comment",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "On Game Start",
+        "info": "",
+        "x": 600,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "4a863b19c2050c0a",
+        "type": "link out",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "On Game Stop",
+        "links": [
+            "b6c64fbb.744e7",
+            "f64afdb2.ae6738",
+            "75a596869f308dab",
+            "fde61d47216f1287"
+        ],
+        "x": 495,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4f3e8b2d7209c3c4",
+        "type": "comment",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "On Game Stop",
+        "info": "",
+        "x": 600,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "442e7bc38dd4c3b7",
+        "type": "link out",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "On Game Reset",
+        "links": [
+            "b72df54c.54dbc8",
+            "f476429e.39f778",
+            "fad501df9730e3cd",
+            "5051fca6f0fc24ce",
+            "771ef7315cbeaed4",
+            "6aa55bc0969c2645",
+            "f64afdb2.ae6738",
+            "27a13ceb38ba3113",
+            "b24d6dd76f244e1c",
+            "561c4af966865974",
+            "75a596869f308dab",
+            "fde61d47216f1287",
+            "35e08daeabc5fa71",
+            "af0afab53c87e0ad"
+        ],
+        "x": 495,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "05b37843628a96bf",
+        "type": "comment",
+        "z": "350f3f1be5bf834e",
+        "name": "Main Flow",
+        "info": "This flow contains nodes that define the overall configuration and monitor state of the system.\n",
+        "x": 100,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "aa84b0b3f6f24d4c",
+        "type": "inject",
+        "z": "350f3f1be5bf834e",
+        "g": "063501cbf8d4d96b",
+        "name": "Every second",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 180,
+        "wires": [
+            [
+                "c7c4685c94a69e6f"
+            ]
+        ]
+    },
+    {
+        "id": "e2d366190836429a",
+        "type": "inject",
+        "z": "350f3f1be5bf834e",
+        "g": "063501cbf8d4d96b",
+        "name": "On Initialisation",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "Initialise",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "758310f9eb5818de"
+            ]
+        ]
+    },
+    {
+        "id": "758310f9eb5818de",
+        "type": "link out",
+        "z": "350f3f1be5bf834e",
+        "g": "063501cbf8d4d96b",
+        "name": "On System Start",
+        "links": [
+            "ce5e1241.adb708",
+            "891fa554.e2eb",
+            "42d9fcf53b80577d",
+            "a42117f2.e7b908",
+            "b382fdf1.42dfd",
+            "753e49af.e1fbf8",
+            "ab728aab.10a15",
+            "7a212126.b73c78",
+            "bca49e2.3ae506",
+            "fec95a4b.bb6bf",
+            "84bae66b.0b1488",
+            "91f5a57b8686c80a",
+            "46aaa4960e9ac869",
+            "e4bbd5899d3b356e",
+            "f64afdb2.ae6738",
+            "7fd4506cfed2714b",
+            "c4a8de8b032253c9",
+            "d22e738b256cdec6",
+            "eb7d0ddb30a55c18",
+            "cae864a2b6640d37"
+        ],
+        "x": 295,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "c7c4685c94a69e6f",
+        "type": "link out",
+        "z": "350f3f1be5bf834e",
+        "g": "063501cbf8d4d96b",
+        "name": "On Tick",
+        "mode": "link",
+        "links": [
+            "75a596869f308dab",
+            "0ebb81d8a4618708"
+        ],
+        "x": 295,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "34e41184596a8cc2",
+        "type": "ui_ui_control",
+        "z": "350f3f1be5bf834e",
+        "g": "063501cbf8d4d96b",
+        "name": "On Browser Refresh",
+        "events": "all",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "87d09c692b8687fc"
+            ]
+        ]
+    },
+    {
+        "id": "87d09c692b8687fc",
+        "type": "link out",
+        "z": "350f3f1be5bf834e",
+        "g": "063501cbf8d4d96b",
+        "name": "On Browser Refresh",
+        "links": [
+            "91bbad40.53273"
+        ],
+        "x": 295,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "0b46b07651aabd95",
+        "type": "ui_template",
+        "z": "350f3f1be5bf834e",
+        "group": "f08ba3d0ec182a89",
+        "name": "CSS-style overrides",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n\n    /* Don't let title expand */\n    md-card md-card-title {\n        flex: 0 0 auto !important;\n    }\n\n    /* Don't show scrollbars */\n    .nr-dashboard-template {\n        overflow-y: hidden !important;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 1000,
+        "y": 140,
+        "wires": [
+            []
+        ],
+        "info": "CSS Style overrides to the Node-RED Dark theme.\n\nFrom the Dashboard node information panel (View->Dashboard), select\n - Site: Options -> Node-RED theme everywhere\n - Theme: Style -> Dark"
+    },
+    {
+        "id": "e364bd8ab15e99bb",
+        "type": "comment",
+        "z": "350f3f1be5bf834e",
+        "name": "Dashboard Styling",
+        "info": "",
+        "x": 990,
+        "y": 101,
+        "wires": []
+    },
+    {
+        "id": "a16e88a8d5c65b16",
+        "type": "catch",
+        "z": "350f3f1be5bf834e",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 940,
+        "y": 260,
+        "wires": [
+            [
+                "c02c1b80ce61d7d7"
+            ]
+        ]
+    },
+    {
+        "id": "c02c1b80ce61d7d7",
+        "type": "debug",
+        "z": "350f3f1be5bf834e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1130,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a4e1b2d5ee32da8d",
+        "type": "complete",
+        "z": "350f3f1be5bf834e",
+        "name": "",
+        "scope": [],
+        "uncaught": false,
+        "x": 950,
+        "y": 320,
+        "wires": [
+            [
+                "c02c1b80ce61d7d7"
+            ]
+        ]
+    },
+    {
+        "id": "21156e9a382b1245",
+        "type": "comment",
+        "z": "350f3f1be5bf834e",
+        "name": "Exception Handling",
+        "info": "",
+        "x": 990,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "cd9c79c0f7ca4c12",
+        "type": "link out",
+        "z": "350f3f1be5bf834e",
+        "name": "On System Start",
+        "links": [
+            "ce5e1241.adb708",
+            "891fa554.e2eb",
+            "a42117f2.e7b908",
+            "b382fdf1.42dfd",
+            "753e49af.e1fbf8",
+            "ab728aab.10a15",
+            "7a212126.b73c78",
+            "bca49e2.3ae506",
+            "fec95a4b.bb6bf",
+            "84bae66b.0b1488",
+            "91f5a57b8686c80a",
+            "46aaa4960e9ac869",
+            "e4bbd5899d3b356e",
+            "f64afdb2.ae6738",
+            "7fd4506cfed2714b",
+            "c4a8de8b032253c9",
+            "d22e738b256cdec6",
+            "75a596869f308dab",
+            "fde61d47216f1287",
+            "eb7d0ddb30a55c18",
+            "cae864a2b6640d37"
+        ],
+        "x": 695,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "06ef4faf69df41d0",
+        "type": "comment",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "On Game Reset",
+        "info": "",
+        "x": 600,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "4a9c0dfb1f0b9b85",
+        "type": "function",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "name": "Update Timer",
+        "func": "// Retrieve current state of global timer variables\nvar gameState = global.get(\"gameState\") || 'playing';\nvar gameDuration = global.get(\"gameDuration\") || 0;\nvar elapsedTimeDelta = global.get(\"elapsedTimeDelta\") || 0;\n// Total time elapsed is duration since the start button was last pressed, + any adjustments\nvar timeElapsed = global.get(\"timeElapsed\") || 0;\nvar startTime = flow.get(\"startTime\") || 0;\n\n// If the game is active, update the time elapsed\nif(gameState == \"playing\") {\n\n    // Total time elapsed is duration since the start button was last pressed, + any adjustments\n    timeElapsed = (Date.now() - startTime);\n\n    // Update the global variable\n    global.set(\"timeElapsed\", timeElapsed);\n}\n\n// We update these even if gameState is not playing, to allow for\n// adjustments to gameDuration or timeElapsed made when game is stopped\nvar timeElapsedAfterAdjustments = timeElapsed += elapsedTimeDelta;\nvar timeRemaining = gameDuration - timeElapsed;\n\nglobal.set(\"timeRemaining\", timeRemaining);\n\nnode.status({ fill: \"green\", shape: \"dot\", text: timeRemaining });\n\n// Update the msg to carry string\nmsg.timeElapsed = timeElapsedAfterAdjustments;        \nmsg.timeRemaining = timeRemaining;\n\n// Only need to update UI if timeRemaining has changed\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 600,
+        "wires": [
+            [
+                "39e77fdf6d2e5543"
+            ]
+        ]
+    },
+    {
+        "id": "c8fb5887561b01d3",
+        "type": "ui_template",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "group": "f08ba3d0ec182a89",
+        "name": "Time Remaining",
+        "order": 2,
+        "width": "6",
+        "height": "3",
+        "format": "<md-card-title>\n    <md-card-title-text>\n        <p class=\"md-headline\">Time Remaining</p>\n    </md-card-title-text>\n    <span ng-class=\"'fa fa-clock-o fa-2x'\"></span>\n</md-card-title>\n<md-card-content>\n    <div style=\"text-align:center\">\n        <span class=\"value\" style=\"color:{{msg.timeColour}}; font-size:3em;\">\n            {{msg.formattedTimeRemaining}}\n        </span>\n    </div>\n</md-card-content>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 740,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "39e77fdf6d2e5543",
+        "type": "function",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "name": "Format Time for Dashboard Display",
+        "func": "// Create formattedTime in hh:mm:ss\nvar t = msg.timeElapsed / 1000; //ms\nvar h = Math.floor(t / 3600);\nvar m = Math.floor(t % 3600 / 60);\nvar s = Math.floor(t % 3600 % 60);\nmsg.formattedTimeElapsed = (\"0\" + h).slice(-2) + \":\" + (\"0\" + m).slice(-2) + \":\" + (\"0\" + s).slice(-2);\n\nvar t2 = msg.timeRemaining / 1000; //ms\nvar h2 = Math.floor(t2 / 3600);\nvar m2 = Math.floor(t2 % 3600 / 60);\nvar s2 = Math.floor(t2 % 3600 % 60);\nmsg.formattedTimeRemaining = (\"0\" + h2).slice(-2) + \":\" + (\"0\" + m2).slice(-2) + \":\" + (\"0\" + s2).slice(-2);\n\nvar t3 = global.get(\"gameDuration\") / 1000; //ms\nvar h3 = Math.floor(t3 / 3600);\nvar m3 = Math.floor(t3 % 3600 / 60);\nvar s3 = Math.floor(t3 % 3600 % 60);\nmsg.formattedGameDuration = (\"0\" + h3).slice(-2) + \":\" + (\"0\" + m3).slice(-2) + \":\" + (\"0\" + s3).slice(-2);\n\n// Set timeColour depending on current gamestate and time remaining\nvar gameState = global.get(\"gameState\");\nif (gameState == \"playing\") {\n    if (msg.timeRemaining < 60000) { msg.timeColour = \"red\"; }\n    else { msg.timeColour = \"green\"; }\n}\nelse { msg.timeColour = \"white\"; }\n\n// Update the editor node\nnode.status({ fill: msg.timeColour, shape:\"dot\", text:msg.formattedTimeRemaining});\n\n// Forward the message along the flow\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 600,
+        "wires": [
+            [
+                "c8fb5887561b01d3",
+                "f93150b86a48dd2b",
+                "59b3354d12a64752"
+            ]
+        ]
+    },
+    {
+        "id": "75a596869f308dab",
+        "type": "link in",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "name": "UpdateTimerLinkIn",
+        "links": [
+            "32180624627a2049",
+            "442e7bc38dd4c3b7",
+            "4a863b19c2050c0a",
+            "c7c4685c94a69e6f",
+            "cd9c79c0f7ca4c12",
+            "ef582930fa6e08ef"
+        ],
+        "x": 85,
+        "y": 600,
+        "wires": [
+            [
+                "4a9c0dfb1f0b9b85"
+            ]
+        ]
+    },
+    {
+        "id": "e7252fb6a4819ecf",
+        "type": "ui_button",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "name": "",
+        "group": "f08ba3d0ec182a89",
+        "order": 9,
+        "width": "2",
+        "height": 1,
+        "passthru": true,
+        "label": "+5min",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "grey",
+        "className": "",
+        "icon": "fa-plus",
+        "payload": "{\"msg\":{\"payload\":\"add5\",\"timeout\":600,\"warning\":30}}",
+        "payloadType": "json",
+        "topic": "/game",
+        "topicType": "str",
+        "x": 110,
+        "y": 740,
+        "wires": [
+            [
+                "2ce811328a35a524"
+            ]
+        ]
+    },
+    {
+        "id": "f457b1998a5d01b9",
+        "type": "ui_button",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "name": "",
+        "group": "f08ba3d0ec182a89",
+        "order": 7,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "-5min",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "gray",
+        "className": "",
+        "icon": "fa-minus",
+        "payload": "{\"msg\":{\"payload\":\"deduct5\",\"timeout\":600,\"warning\":30}}",
+        "payloadType": "json",
+        "topic": "/game",
+        "topicType": "str",
+        "x": 110,
+        "y": 780,
+        "wires": [
+            [
+                "a98c2ab0de57b58a"
+            ]
+        ]
+    },
+    {
+        "id": "2ce811328a35a524",
+        "type": "change",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gameDuration",
+                "pt": "global",
+                "to": "$globalContext('gameDuration') + (5000 * 60)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 740,
+        "wires": [
+            [
+                "32180624627a2049"
+            ]
+        ]
+    },
+    {
+        "id": "a98c2ab0de57b58a",
+        "type": "change",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gameDuration",
+                "pt": "global",
+                "to": "$globalContext('gameDuration') - (5000 * 60)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 780,
+        "wires": [
+            [
+                "32180624627a2049"
+            ]
+        ]
+    },
+    {
+        "id": "32180624627a2049",
+        "type": "link out",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "name": "On Time Adjust",
+        "mode": "link",
+        "links": [
+            "75a596869f308dab"
+        ],
+        "x": 535,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "f93150b86a48dd2b",
+        "type": "ui_text",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "group": "f08ba3d0ec182a89",
+        "order": 8,
+        "width": "2",
+        "height": "1",
+        "name": "Game Duration",
+        "label": "Duration",
+        "format": "{{msg.formattedGameDuration}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 740,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "465e64fa2453bb6a",
+        "type": "ui_button",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "name": "",
+        "group": "f08ba3d0ec182a89",
+        "order": 12,
+        "width": "2",
+        "height": 1,
+        "passthru": true,
+        "label": "+5min",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#999999",
+        "className": "",
+        "icon": "fa-plus",
+        "payload": "{\"msg\":{\"payload\":\"add5\",\"timeout\":600,\"warning\":30}}",
+        "payloadType": "json",
+        "topic": "/game",
+        "topicType": "str",
+        "x": 110,
+        "y": 820,
+        "wires": [
+            [
+                "0c9d3ef3bf7c7bc0"
+            ]
+        ]
+    },
+    {
+        "id": "f020309c907b1b75",
+        "type": "ui_button",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "name": "",
+        "group": "f08ba3d0ec182a89",
+        "order": 10,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "-5min",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#999999",
+        "className": "",
+        "icon": "fa-minus",
+        "payload": "{\"msg\":{\"payload\":\"deduct5\",\"timeout\":600,\"warning\":30}}",
+        "payloadType": "json",
+        "topic": "/game",
+        "topicType": "str",
+        "x": 110,
+        "y": 860,
+        "wires": [
+            [
+                "6e87bf8ee8b2ac47"
+            ]
+        ]
+    },
+    {
+        "id": "0c9d3ef3bf7c7bc0",
+        "type": "change",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "elapsedTimeDelta",
+                "pt": "global",
+                "to": "$globalContext('elapsedTimeDelta') + (5000 * 60)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 820,
+        "wires": [
+            [
+                "32180624627a2049"
+            ]
+        ]
+    },
+    {
+        "id": "6e87bf8ee8b2ac47",
+        "type": "change",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "elapsedTimeDelta",
+                "pt": "global",
+                "to": "$globalContext('elapsedTimeDelta') - (5000 * 60)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 860,
+        "wires": [
+            [
+                "32180624627a2049"
+            ]
+        ]
+    },
+    {
+        "id": "59b3354d12a64752",
+        "type": "ui_text",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "group": "f08ba3d0ec182a89",
+        "order": 11,
+        "width": "2",
+        "height": "1",
+        "name": "Time Elapsed",
+        "label": "Elapsed",
+        "format": "{{msg.formattedTimeElapsed}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 740,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "65c75d67cdeec25c",
+        "type": "comment",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "name": "Adjustments to game duration or time taken",
+        "info": "",
+        "x": 230,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "be78aac3fbf7d64d",
+        "type": "comment",
+        "z": "6515d38c55026b61",
+        "g": "77e43472cf997f8c",
+        "name": "Format into hh:mm:ss",
+        "info": "",
+        "x": 660,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "0c35049764e708e8",
+        "type": "comment",
+        "z": "6515d38c55026b61",
+        "g": "77e43472cf997f8c",
+        "name": "Retrieve global game time",
+        "info": "",
+        "x": 410,
+        "y": 120,
+        "wires": [],
+        "icon": "node-red/parser-html.svg"
+    },
+    {
+        "id": "4da897978dfdd598",
+        "type": "inject",
+        "z": "6515d38c55026b61",
+        "g": "77e43472cf997f8c",
+        "name": "Every 1 sec",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 160,
+        "wires": [
+            [
+                "cfaf0dac6b827719"
+            ]
+        ]
+    },
+    {
+        "id": "3ed1561fe19b6b12",
+        "type": "comment",
+        "z": "6515d38c55026b61",
+        "g": "77e43472cf997f8c",
+        "name": "Timer",
+        "info": "",
+        "x": 190,
+        "y": 120,
+        "wires": [],
+        "icon": "node-red/parser-html.svg"
+    },
+    {
+        "id": "cfaf0dac6b827719",
+        "type": "function",
+        "z": "6515d38c55026b61",
+        "g": "77e43472cf997f8c",
+        "name": "Update Game Timer",
+        "func": "\n// Retrieve the global time remaining counter\nmsg.timeRemaining = global.get(\"timeRemaining\") || 0;\n\n// Display value in the editor\nnode.status({ fill: \"green\", shape: \"dot\", text: msg.timeRemaining});\n\n// Pass value along the flow\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 160,
+        "wires": [
+            [
+                "5b7d60f32418357b"
+            ]
+        ]
+    },
+    {
+        "id": "5b7d60f32418357b",
+        "type": "function",
+        "z": "6515d38c55026b61",
+        "g": "77e43472cf997f8c",
+        "name": "Format Time As HH:MM:SS",
+        "func": "// msg.timeRemaining is in milliseconds\nvar t = msg.timeRemaining / 1000;\nvar h = Math.floor(t / 3600);\nvar m = Math.floor(t % 3600 / 60);\nvar s = Math.floor(t % 3600 % 60);\n\n// Format into hh:mm:ss\nmsg.timerText = (\"0\" + h).slice(-2) + \":\" + (\"0\" + m).slice(-2) + \":\" + (\"0\" + s).slice(-2);\n\n// Update the editor node\nnode.status({fill:\"green\", shape:\"dot\", text:msg.timerText});\n\n// Forward the message along the flow\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 160,
+        "wires": [
+            [
+                "65659247aa3d3a29"
+            ]
+        ]
+    },
+    {
+        "id": "e45ba9afa3187d8c",
+        "type": "join",
+        "z": "6515d38c55026b61",
+        "g": "926b25295ff0c140",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "",
+        "propertyType": "full",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "1",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 1130,
+        "y": 140,
+        "wires": [
+            [
+                "06448b17746de470"
+            ]
+        ]
+    },
+    {
+        "id": "425d092a12e47ffa",
+        "type": "comment",
+        "z": "6515d38c55026b61",
+        "g": "926b25295ff0c140",
+        "name": "Combine time + clue + video",
+        "info": "",
+        "x": 1143,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "06448b17746de470",
+        "type": "uibuilder",
+        "z": "6515d38c55026b61",
+        "g": "926b25295ff0c140",
+        "name": "",
+        "topic": "",
+        "url": "room_display",
+        "fwdInMessages": false,
+        "allowScripts": true,
+        "allowStyles": false,
+        "copyIndex": true,
+        "templateFolder": "blank",
+        "extTemplate": "",
+        "showfolder": false,
+        "reload": true,
+        "sourceFolder": "src",
+        "deployedVersion": "6.4.1",
+        "showMsgUib": false,
+        "x": 1360,
+        "y": 140,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "40fc72fba7aa7963",
+        "type": "comment",
+        "z": "6515d38c55026b61",
+        "g": "926b25295ff0c140",
+        "name": "Send to display",
+        "info": "",
+        "x": 1367,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "f36c6da1dffe58a7",
+        "type": "link in",
+        "z": "6515d38c55026b61",
+        "g": "926b25295ff0c140",
+        "name": "In-Game Text Display",
+        "links": [
+            "15a7cc559a0c8bdc",
+            "96a0b122060445a5",
+            "ed5d099e0b8c1424",
+            "0544439cd5c8978b",
+            "65659247aa3d3a29",
+            "347bfab840458c38",
+            "4586a515dd11f3a4",
+            "cff28163790bb4b6",
+            "d1ddfac3b8f1e655"
+        ],
+        "x": 1035,
+        "y": 140,
+        "wires": [
+            [
+                "e45ba9afa3187d8c"
+            ]
+        ]
+    },
+    {
+        "id": "65659247aa3d3a29",
+        "type": "link out",
+        "z": "6515d38c55026b61",
+        "g": "77e43472cf997f8c",
+        "name": "In-Game Text Display Out",
+        "mode": "link",
+        "links": [
+            "f36c6da1dffe58a7"
+        ],
+        "x": 825,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a9657f29265a19cb",
+        "type": "trigger",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "",
+        "op1": "",
+        "op2": " ",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "5",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 420,
+        "y": 320,
+        "wires": [
+            [
+                "0294e6a1d24e3b66"
+            ]
+        ]
+    },
+    {
+        "id": "0294e6a1d24e3b66",
+        "type": "change",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "displayText",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 320,
+        "wires": [
+            [
+                "15a7cc559a0c8bdc"
+            ]
+        ]
+    },
+    {
+        "id": "1632bfb75500e5ce",
+        "type": "comment",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "Duration before clearing",
+        "info": "",
+        "x": 440,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9fb2034f7ba9183c",
+        "type": "comment",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "Set msg variable from payload",
+        "info": "",
+        "x": 710,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "ad976867a4b58c55",
+        "type": "change",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "videoOverlaySrc",
+                "pt": "msg",
+                "to": "/Pexels Videos 3853.mp4",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 520,
+        "wires": [
+            [
+                "0544439cd5c8978b"
+            ]
+        ]
+    },
+    {
+        "id": "cbe206eb86d19c7d",
+        "type": "trigger",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "",
+        "op1": "",
+        "op2": " ",
+        "op1type": "nul",
+        "op2type": "str",
+        "duration": "5",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 640,
+        "y": 620,
+        "wires": [
+            [
+                "be849fb620482221",
+                "85e76089087dda18"
+            ]
+        ]
+    },
+    {
+        "id": "ba40122028b2f2a1",
+        "type": "change",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gameState",
+                "pt": "global",
+                "to": "stopped",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 620,
+        "wires": [
+            [
+                "cbe206eb86d19c7d"
+            ]
+        ]
+    },
+    {
+        "id": "be849fb620482221",
+        "type": "change",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gameState",
+                "pt": "global",
+                "to": "playing",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "85e76089087dda18",
+        "type": "change",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "videoOverlaySrc",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 870,
+        "y": 580,
+        "wires": [
+            [
+                "347bfab840458c38"
+            ]
+        ]
+    },
+    {
+        "id": "15a7cc559a0c8bdc",
+        "type": "link out",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "In-Game Text Display Out",
+        "mode": "link",
+        "links": [
+            "f36c6da1dffe58a7"
+        ],
+        "x": 825,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "f674e4bdc6143df1",
+        "type": "ui_dropdown",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "fdc03bbb8e995276",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "Look Under the Table",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Did you Hear a Noise?",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Check your coat pockets",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "",
+        "topicType": "str",
+        "className": "",
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "a9657f29265a19cb",
+                "a9df44cee943b514"
+            ]
+        ]
+    },
+    {
+        "id": "bb50386bbfe5315a",
+        "type": "comment",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "Predefined Messages",
+        "info": "",
+        "x": 200,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "70947c7a5b06346a",
+        "type": "ui_text_input",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "fdc03bbb8e995276",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "sendOnBlur": false,
+        "className": "",
+        "topicType": "str",
+        "x": 180,
+        "y": 420,
+        "wires": [
+            [
+                "a9657f29265a19cb",
+                "a9df44cee943b514"
+            ]
+        ]
+    },
+    {
+        "id": "4fe4d112c4b7ecf6",
+        "type": "ui_audio",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "",
+        "group": "fdc03bbb8e995276",
+        "voice": "Microsoft Lorenzo Online (Natural) - Spanish (Chile)",
+        "always": false,
+        "x": 1200,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "a9df44cee943b514",
+        "type": "file in",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "",
+        "filename": "C:\\temp\\out-of-nowhere-message-tone.mp3",
+        "filenameType": "str",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 540,
+        "y": 420,
+        "wires": [
+            [
+                "4fe4d112c4b7ecf6"
+            ]
+        ]
+    },
+    {
+        "id": "c170944ad7cca709",
+        "type": "comment",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "Free Text Messages",
+        "info": "",
+        "x": 190,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "fa2877c68a83af51",
+        "type": "ui_button",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "",
+        "group": "fdc03bbb8e995276",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Play video",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 520,
+        "wires": [
+            [
+                "ad976867a4b58c55",
+                "ba40122028b2f2a1"
+            ]
+        ]
+    },
+    {
+        "id": "7c63674c8c3c346f",
+        "type": "comment",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "Play video overlay",
+        "info": "",
+        "x": 190,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "9894e6db90e8a547",
+        "type": "comment",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "Play audible alert for players",
+        "info": "",
+        "x": 480,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "0544439cd5c8978b",
+        "type": "link out",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "In-Game Text Display Out",
+        "mode": "link",
+        "links": [
+            "f36c6da1dffe58a7"
+        ],
+        "x": 625,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "347bfab840458c38",
+        "type": "link out",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "In-Game Text Display Out",
+        "mode": "link",
+        "links": [
+            "f36c6da1dffe58a7"
+        ],
+        "x": 1025,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "b2afdb1ebfa49b25",
+        "type": "comment",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "Assign video file",
+        "info": "",
+        "x": 440,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "098c7102683ef084",
+        "type": "comment",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "Pause game while video plays",
+        "info": "",
+        "x": 480,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "0dc04fcff8161629",
+        "type": "comment",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "Clear video overlay",
+        "info": "",
+        "x": 850,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "2a3826161c24abd7",
+        "type": "comment",
+        "z": "6515d38c55026b61",
+        "g": "b3d4001bac0269f5",
+        "name": "Resume game",
+        "info": "",
+        "x": 830,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "1aaf6cfe14348092",
+        "type": "mqtt in",
+        "z": "e6bf3e66f1775fc0",
+        "name": "Receive initialize messages",
+        "topic": "Initialize/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e21e4642.c12f6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 160,
+        "wires": [
+            [
+                "89cca040e12c7ef5"
+            ]
+        ]
+    },
+    {
+        "id": "89cca040e12c7ef5",
+        "type": "json",
+        "z": "e6bf3e66f1775fc0",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": true,
+        "x": 390,
+        "y": 380,
+        "wires": [
+            [
+                "0f1d138ac5e417f1"
+            ]
+        ]
+    },
+    {
+        "id": "9279911921b45e08",
+        "type": "link out",
+        "z": "e6bf3e66f1775fc0",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "18404cad9ee52512"
+        ],
+        "x": 1075,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "0f1d138ac5e417f1",
+        "type": "function",
+        "z": "e6bf3e66f1775fc0",
+        "name": "UpdateDeviceSetup",
+        "func": "var payload = msg.payload; //get payload\nvar id = msg.payload[\"id\"];\nif (id == \"70B8F65D437C\")\n{\n    payload.command = \"INITIALIZERESULT\";\n    payload.deviceName = \"REED001\";\n    payload.secondsToUpdateServer = 1;\n}\nif (id == \"083AF2B74D6C\")\n{\n    payload.command = \"INITIALIZERESULT\";\n    payload.deviceName = \"WLED001\";\n}\nmsg.payload = payload;\nmsg.topic = \"ToDevice/\" + msg.payload[\"id\"];\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 220,
+        "wires": [
+            [
+                "9279911921b45e08"
+            ]
+        ]
+    },
+    {
+        "id": "eb7d0ddb30a55c18",
+        "type": "link in",
+        "z": "d470efbc7020c379",
+        "g": "857046f1705f6e09",
+        "name": "On Initialization",
+        "links": [
+            "758310f9eb5818de",
+            "cd9c79c0f7ca4c12"
+        ],
+        "x": 355,
+        "y": 160,
+        "wires": [
+            [
+                "c86c5b73d7b070d2"
+            ]
+        ]
+    },
+    {
+        "id": "35e08daeabc5fa71",
+        "type": "link in",
+        "z": "d470efbc7020c379",
+        "g": "857046f1705f6e09",
+        "name": "On Reset",
+        "links": [
+            "442e7bc38dd4c3b7"
+        ],
+        "x": 315,
+        "y": 220,
+        "wires": [
+            [
+                "936acb30e1aa36d2"
+            ]
+        ]
+    },
+    {
+        "id": "936acb30e1aa36d2",
+        "type": "change",
+        "z": "d470efbc7020c379",
+        "g": "857046f1705f6e09",
+        "name": "Reset Device",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"id\":\"\",\"command\":\"RESET\",\"name\":\"LED\",\"description\":\"WLED Controller\",\"state\":\"OFF\",\"rgb\":\"000,000,000\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 220,
+        "wires": [
+            [
+                "9537cb1b4dc88778"
+            ]
+        ]
+    },
+    {
+        "id": "46fe3fba38d8ec55",
+        "type": "link out",
+        "z": "d470efbc7020c379",
+        "g": "7f19e7ce3ba183da",
+        "name": "Out 2 Device",
+        "mode": "link",
+        "links": [
+            "18404cad9ee52512"
+        ],
+        "x": 1135,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "717ad61c6b53591d",
+        "type": "ui_button",
+        "z": "d470efbc7020c379",
+        "g": "217067ffa17d7c85",
+        "name": "RESET",
+        "group": "8f886ae1479c4797",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-lock",
+        "payload": "{}",
+        "payloadType": "json",
+        "topic": "",
+        "topicType": "str",
+        "x": 200,
+        "y": 360,
+        "wires": [
+            [
+                "936acb30e1aa36d2"
+            ]
+        ]
+    },
+    {
+        "id": "8a055186d1dd9b0f",
+        "type": "ui_button",
+        "z": "d470efbc7020c379",
+        "g": "217067ffa17d7c85",
+        "name": "SOLVE",
+        "group": "8f886ae1479c4797",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Solve",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-unlock",
+        "payload": "{\"id\":\"\",\"command\":\"SOLVE\",\"name\":\"LED\",\"description\":\"WLED Controller\",\"state\":\"SOLVED\"}",
+        "payloadType": "json",
+        "topic": "",
+        "topicType": "str",
+        "x": 200,
+        "y": 420,
+        "wires": [
+            [
+                "9537cb1b4dc88778"
+            ]
+        ]
+    },
+    {
+        "id": "c86c5b73d7b070d2",
+        "type": "change",
+        "z": "d470efbc7020c379",
+        "g": "857046f1705f6e09",
+        "name": "Set Device Id",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceId",
+                "pt": "flow",
+                "to": "083AF2B74D6C",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 140,
+        "wires": [
+            [
+                "936acb30e1aa36d2",
+                "e59eded70d330ae4"
+            ]
+        ]
+    },
+    {
+        "id": "da6712539ac96d2b",
+        "type": "function",
+        "z": "d470efbc7020c379",
+        "name": "Assign deviceId to Topic",
+        "func": "msg.topic = \"ToDevice/\" + flow.get(\"deviceId\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 360,
+        "wires": [
+            [
+                "46fe3fba38d8ec55"
+            ]
+        ]
+    },
+    {
+        "id": "5cf9f3f76f7e865f",
+        "type": "ui_template",
+        "z": "d470efbc7020c379",
+        "g": "942a7bbbbab86018",
+        "group": "8f886ae1479c4797",
+        "name": "Button Panel",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "format": "<md-card-title>\n    <md-card-title-text>\n        <p class=\"md-headline\">{{msg.payload.name}}</p>\n    </md-card-title-text>\n    <span ng-class=\"msg.payload.state=='SOLVED' ? 'fa fa-unlock fa-2x' : 'fa fa-lock fa-2x'\"></span>\n</md-card-title>\n<md-card-content>\n    <div ng-style=\"{width:'100%',height:'8px','background-color':msg.payload.state=='SOLVED' ? 'green' : 'red'}\" ></div>\n    <p>\n        {{msg.payload.description?msg.payload.description:'Unknown'}}\n<br>\n        {{msg.payload.id?msg.payload.id:'Unknown'}}\n        - {{msg.payload.time?msg.payload.time:'Not connected'}}\n<br>\n        {{msg.payload.deviceName?msg.payload.deviceName:'Unknown'}}\n<br>\n        {{msg.payload.rgb?msg.payload.rgb:'Unknown'}}\n<br>\n        {{msg.payload.command?msg.payload.command:'Unknown'}}\n    </p>\n    <div style=\"text-align:center\">\n        <span style=\"font-size: 2em;\">&nbsp;</span>\n    </div>\n</md-card-content>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 490,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2d8376eba5628a0",
+        "type": "mqtt in",
+        "z": "d470efbc7020c379",
+        "g": "942a7bbbbab86018",
+        "name": "InternalMessages2Flow",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e21e4642.c12f6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 1,
+        "x": 300,
+        "y": 780,
+        "wires": [
+            [
+                "5cf9f3f76f7e865f"
+            ]
+        ]
+    },
+    {
+        "id": "e59eded70d330ae4",
+        "type": "function",
+        "z": "d470efbc7020c379",
+        "g": "942a7bbbbab86018",
+        "name": "InitializeInternalSubscription",
+        "func": "msg.action = \"subscribe\";\nmsg.topic = \"Internal/\" + flow.get(\"deviceId\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 700,
+        "wires": [
+            [
+                "c2d8376eba5628a0"
+            ]
+        ]
+    },
+    {
+        "id": "7ed49845e55cac99",
+        "type": "ui_button",
+        "z": "d470efbc7020c379",
+        "name": "",
+        "group": "8f886ae1479c4797",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "RED",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "{\"id\":\"\",\"command\":\"GLOW\",\"rgb\":\"255,000,000\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 710,
+        "y": 560,
+        "wires": [
+            [
+                "fd5e6940324921ac"
+            ]
+        ]
+    },
+    {
+        "id": "5a0188e8b990de5f",
+        "type": "ui_button",
+        "z": "d470efbc7020c379",
+        "name": "",
+        "group": "8f886ae1479c4797",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "GREEN",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "GREEN",
+        "className": "",
+        "icon": "",
+        "payload": "{\"id\":\"\",\"command\":\"GLOW\",\"rgb\":\"000,255,000\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 720,
+        "y": 720,
+        "wires": [
+            [
+                "fd5e6940324921ac"
+            ]
+        ]
+    },
+    {
+        "id": "fd5e6940324921ac",
+        "type": "function",
+        "z": "d470efbc7020c379",
+        "name": "PassThrough",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 580,
+        "wires": [
+            [
+                "9537cb1b4dc88778"
+            ]
+        ]
+    },
+    {
+        "id": "722d2632ddadf746",
+        "type": "ui_button",
+        "z": "d470efbc7020c379",
+        "name": "",
+        "group": "8f886ae1479c4797",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "BLUE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "BLUE",
+        "className": "",
+        "icon": "",
+        "payload": "{\"id\":\"\",\"command\":\"GLOW\",\"rgb\":\"000,000,255\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 710,
+        "y": 640,
+        "wires": [
+            [
+                "fd5e6940324921ac"
+            ]
+        ]
+    },
+    {
+        "id": "b5346d11ea3d5199",
+        "type": "ui_button",
+        "z": "d470efbc7020c379",
+        "name": "",
+        "group": "8f886ae1479c4797",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "MAGENTA",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "MAGENTA",
+        "className": "",
+        "icon": "",
+        "payload": "{\"id\":\"\",\"command\":\"GLOW\",\"rgb\":\"255,000,255\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 710,
+        "y": 600,
+        "wires": [
+            [
+                "fd5e6940324921ac"
+            ]
+        ]
+    },
+    {
+        "id": "f3e46c929c7e2e88",
+        "type": "ui_button",
+        "z": "d470efbc7020c379",
+        "name": "",
+        "group": "8f886ae1479c4797",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "CYAN",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "CYAN",
+        "className": "",
+        "icon": "",
+        "payload": "{\"id\":\"\",\"command\":\"GLOW\",\"rgb\":\"000,255,255\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 710,
+        "y": 680,
+        "wires": [
+            [
+                "fd5e6940324921ac"
+            ]
+        ]
+    },
+    {
+        "id": "a0126771b1df3709",
+        "type": "ui_button",
+        "z": "d470efbc7020c379",
+        "name": "",
+        "group": "8f886ae1479c4797",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "YELLOW",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "YELLOW",
+        "className": "",
+        "icon": "",
+        "payload": "{\"id\":\"\",\"command\":\"GLOW\",\"rgb\":\"255,255,000\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 720,
+        "y": 780,
+        "wires": [
+            [
+                "fd5e6940324921ac"
+            ]
+        ]
+    },
+    {
+        "id": "67ed85c7985c08f7",
+        "type": "link out",
+        "z": "d470efbc7020c379",
+        "g": "60aa0fe460322fc9",
+        "name": "Update State",
+        "mode": "link",
+        "links": [
+            "7975934d833d8651"
+        ],
+        "x": 935,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "9537cb1b4dc88778",
+        "type": "function",
+        "z": "d470efbc7020c379",
+        "name": "Assign deviceId To Payload",
+        "func": "msg.payload.id = flow.get(\"deviceId\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 300,
+        "wires": [
+            [
+                "67ed85c7985c08f7",
+                "da6712539ac96d2b"
+            ]
+        ]
+    },
+    {
+        "id": "cae864a2b6640d37",
+        "type": "link in",
+        "z": "36ad750621f58350",
+        "g": "9be3f485d4cd3d06",
+        "name": "On Initialization",
+        "links": [
+            "758310f9eb5818de",
+            "cd9c79c0f7ca4c12"
+        ],
+        "x": 355,
+        "y": 220,
+        "wires": [
+            [
+                "75ff2e91104cf3d9"
+            ]
+        ]
+    },
+    {
+        "id": "af0afab53c87e0ad",
+        "type": "link in",
+        "z": "36ad750621f58350",
+        "g": "9be3f485d4cd3d06",
+        "name": "On Reset",
+        "links": [
+            "442e7bc38dd4c3b7"
+        ],
+        "x": 315,
+        "y": 280,
+        "wires": [
+            [
+                "5dfb35929ba754d0"
+            ]
+        ]
+    },
+    {
+        "id": "5dfb35929ba754d0",
+        "type": "change",
+        "z": "36ad750621f58350",
+        "g": "9be3f485d4cd3d06",
+        "name": "Reset Device",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"id\":\"\",\"command\":\"RESET\",\"name\":\"REED\",\"description\":\"REED Controller\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 280,
+        "wires": [
+            [
+                "6573e1c4dbc13d46"
+            ]
+        ]
+    },
+    {
+        "id": "75ff2e91104cf3d9",
+        "type": "change",
+        "z": "36ad750621f58350",
+        "g": "9be3f485d4cd3d06",
+        "name": "Set Device Id",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceId",
+                "pt": "flow",
+                "to": "70B8F65D437C",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 200,
+        "wires": [
+            [
+                "5dfb35929ba754d0",
+                "e5e56896fb6777eb"
+            ]
+        ]
+    },
+    {
+        "id": "cab7d3a64a6b37f8",
+        "type": "ui_template",
+        "z": "36ad750621f58350",
+        "g": "03205d386d5da0a8",
+        "group": "1ee549352e701131",
+        "name": "Button Panel",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "format": "<md-card-title>\n    <md-card-title-text>\n        <p class=\"md-headline\">{{msg.payload.name}}</p>\n    </md-card-title-text>\n    <span ng-class=\"msg.payload.state=='SOLVED' ? 'fa fa-unlock fa-2x' : 'fa fa-lock fa-2x'\"></span>\n</md-card-title>\n<md-card-content>\n    <div ng-style=\"{width:'100%',height:'8px','background-color':msg.payload.state=='SOLVED' ? 'green' : 'red'}\" ></div>\n    <p>\n        {{msg.payload.description?msg.payload.description:'Unknown'}}\n<br>\n        {{msg.payload.id?msg.payload.id:'Unknown'}}\n        - {{msg.payload.time?msg.payload.time:'Unknown'}}\n<br>\n        {{msg.payload.deviceName?msg.payload.deviceName:'Unknown'}}\n<br>\n        {{msg.payload.REEDsensorValues?msg.payload.REEDsensorValues:'Unknown'}}\n<br>\n        {{msg.payload.REEDsensorState?msg.payload.REEDsensorState:'Unknown'}}\n    </p>\n    <div style=\"text-align:center\">\n        <span style=\"font-size: 2em;\">&nbsp;</span>\n    </div>\n</md-card-content>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 490,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a608d62001107f7d",
+        "type": "mqtt in",
+        "z": "36ad750621f58350",
+        "g": "03205d386d5da0a8",
+        "name": "InternalMessages2Flow",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e21e4642.c12f6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 1,
+        "x": 280,
+        "y": 680,
+        "wires": [
+            [
+                "cab7d3a64a6b37f8",
+                "ccf81691e40a862a"
+            ]
+        ]
+    },
+    {
+        "id": "e5e56896fb6777eb",
+        "type": "function",
+        "z": "36ad750621f58350",
+        "g": "03205d386d5da0a8",
+        "name": "InitializeInternalSubscription",
+        "func": "msg.action = \"subscribe\";\nmsg.topic = \"Internal/\" + flow.get(\"deviceId\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 600,
+        "wires": [
+            [
+                "a608d62001107f7d"
+            ]
+        ]
+    },
+    {
+        "id": "6573e1c4dbc13d46",
+        "type": "function",
+        "z": "36ad750621f58350",
+        "name": "Assign deviceId To Payload",
+        "func": "msg.payload.id = flow.get(\"deviceId\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 260,
+        "wires": [
+            [
+                "f041921445dae881"
+            ]
+        ]
+    },
+    {
+        "id": "f041921445dae881",
+        "type": "link out",
+        "z": "36ad750621f58350",
+        "g": "8db576f9d8512bd2",
+        "name": "Update State",
+        "mode": "link",
+        "links": [
+            "7975934d833d8651"
+        ],
+        "x": 995,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f1e0b406ffdd1a58",
+        "type": "ui_audio",
+        "z": "36ad750621f58350",
+        "g": "67b341b707206f81",
+        "name": "ABRISTE LA TAPA",
+        "group": "487ff8a5c1e2834b",
+        "voice": "Microsoft Paola Online (Natural) - Spanish (Venezuela)",
+        "always": true,
+        "x": 1070,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "21fb12cc335e95bb",
+        "type": "switch",
+        "z": "36ad750621f58350",
+        "g": "67b341b707206f81",
+        "name": "Box Open",
+        "property": "payload.REEDsensorState",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 880,
+        "y": 680,
+        "wires": [
+            [
+                "90e681b6ad4f4aba"
+            ],
+            [
+                "6ae9f8463951f36b"
+            ]
+        ]
+    },
+    {
+        "id": "90e681b6ad4f4aba",
+        "type": "change",
+        "z": "36ad750621f58350",
+        "g": "67b341b707206f81",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "TAPA ABIERTA",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 740,
+        "wires": [
+            [
+                "2d36644e71951fa4"
+            ]
+        ]
+    },
+    {
+        "id": "ccf81691e40a862a",
+        "type": "rbe",
+        "z": "36ad750621f58350",
+        "g": "67b341b707206f81",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload.REEDsensorState",
+        "topi": "topic",
+        "x": 750,
+        "y": 680,
+        "wires": [
+            [
+                "21fb12cc335e95bb"
+            ]
+        ]
+    },
+    {
+        "id": "2d36644e71951fa4",
+        "type": "ui_text",
+        "z": "36ad750621f58350",
+        "g": "67b341b707206f81",
+        "group": "487ff8a5c1e2834b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1070,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "6ae9f8463951f36b",
+        "type": "change",
+        "z": "36ad750621f58350",
+        "g": "67b341b707206f81",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "TAPA CERRADA",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 800,
+        "wires": [
+            [
+                "2d36644e71951fa4"
+            ]
+        ]
+    },
+    {
+        "id": "0ebb81d8a4618708",
+        "type": "link in",
+        "z": "7cec459b408f9e65",
+        "name": "link in 1",
+        "links": [
+            "c7c4685c94a69e6f"
+        ],
+        "x": 145,
+        "y": 200,
+        "wires": [
+            [
+                "8138e05905f687ac"
+            ]
+        ]
+    },
+    {
+        "id": "5e28fca11e776c89",
+        "type": "http request",
+        "z": "7cec459b408f9e65",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 510,
+        "y": 200,
+        "wires": [
+            [
+                "d21b02c71b5bd77a"
+            ]
+        ]
+    },
+    {
+        "id": "1801b96c23b5805f",
+        "type": "debug",
+        "z": "7cec459b408f9e65",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d21b02c71b5bd77a",
+        "type": "rbe",
+        "z": "7cec459b408f9e65",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 590,
+        "y": 360,
+        "wires": [
+            [
+                "3d92135786d31413"
+            ]
+        ]
+    },
+    {
+        "id": "8138e05905f687ac",
+        "type": "change",
+        "z": "7cec459b408f9e65",
+        "name": "set msg request",
+        "rules": [
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "http://192.168.1.124?command=state",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 320,
+        "wires": [
+            [
+                "5e28fca11e776c89"
+            ]
+        ]
+    },
+    {
+        "id": "3b1c032c3fcaeff5",
+        "type": "ui_template",
+        "z": "7cec459b408f9e65",
+        "group": "487ff8a5c1e2834b",
+        "name": "Button Panel",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "format": "<md-card-title>\n    <md-card-title-text>\n        <p class=\"md-headline\">{{msg.payload.deviceName}}</p>\n    </md-card-title-text>\n    <span ng-class=\"msg.payload.universal_state.machine_state=='2' ? 'fa fa-unlock fa-2x' : 'fa fa-lock fa-2x'\"></span>\n</md-card-title>\n<md-card-content>\n    <div ng-style=\"{width:'100%',height:'8px','background-color':msg.payload.universal_state.machine_state=='2' ? 'green' : 'red'}\" ></div>\n    <p>\n        {{msg.payload.description?msg.payload.description:'Unknown'}}\n<br>\n        {{msg.payload.id?msg.payload.id:'Unknown'}}\n        - {{msg.payload.time?msg.payload.time:'Unknown'}}\n<br>\n        {{msg.payload.universal_state.input_states?universal_state.input_states:'Unknown'}}\n    </p>\n    <div style=\"text-align:center\">\n        <span style=\"font-size: 2em;\">&nbsp;</span>\n    </div>\n</md-card-content>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 930,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "df3c1dacf6fb708e",
+        "type": "function",
+        "z": "7cec459b408f9e65",
+        "name": "function 1",
+        "func": "var payload = msg.payload; //get payload\nvar id = msg.payload.id;\nif (id == \"70129022401520\") {\n    payload.deviceName = \"ESRS-GABRIELTEST\";\n    payload.description = \"Contact & Hall Sensor\";\n}\n\nvar d= new Date();\npayload.time = d.toLocaleTimeString();\nmsg.payload = payload;\n\n// msg.topic = \"ToDevice/\" + msg.payload[\"id\"];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 500,
+        "wires": [
+            [
+                "1801b96c23b5805f",
+                "3b1c032c3fcaeff5"
+            ]
+        ]
+    },
+    {
+        "id": "3d92135786d31413",
+        "type": "json",
+        "z": "7cec459b408f9e65",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 710,
+        "y": 260,
+        "wires": [
+            [
+                "df3c1dacf6fb708e"
+            ]
+        ]
+    }
+]

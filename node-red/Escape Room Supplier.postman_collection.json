@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "8167e004-04bf-4edb-a41f-f8f1efbac2b7",
+		"name": "Escape Room Supplier",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9243496"
+	},
+	"item": [
+		{
+			"name": "UPC state change",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"70129022401520\",\"universal_set\":{\"machine_state\":2}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.124",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"124"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get UPC state",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.124?command=state",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"124"
+					],
+					"query": [
+						{
+							"key": "command",
+							"value": "state"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPC input override",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"70129022401520\",\"command\":{\"name\":\"settings\"},\"universal_set\":{\"input_number\":1,\"input_state\":2}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.124",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"124"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
