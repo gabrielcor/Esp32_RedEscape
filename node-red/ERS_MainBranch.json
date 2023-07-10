@@ -93,6 +93,14 @@
         "env": []
     },
     {
+        "id": "d811a8c07382bd1d",
+        "type": "tab",
+        "label": "Get ERS - UPC devices",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "063501cbf8d4d96b",
         "type": "group",
         "z": "350f3f1be5bf834e",
@@ -109,9 +117,7 @@
             "87d09c692b8687fc"
         ],
         "x": 34,
-        "y": 79,
-        "w": 302,
-        "h": 202
+        "y": 79
     },
     {
         "id": "88186d2d626ead90",
@@ -126,9 +132,7 @@
             "42d9fcf53b80577d"
         ],
         "x": 374,
-        "y": 79,
-        "w": 312,
-        "h": 82
+        "y": 79
     },
     {
         "id": "1d39f27b3d601c72",
@@ -155,9 +159,7 @@
             "06ef4faf69df41d0"
         ],
         "x": 34,
-        "y": 319,
-        "w": 672,
-        "h": 202
+        "y": 319
     },
     {
         "id": "c870415b6658eca9",
@@ -186,9 +188,7 @@
             "65c75d67cdeec25c"
         ],
         "x": 34,
-        "y": 559,
-        "w": 812,
-        "h": 342
+        "y": 559
     },
     {
         "id": "77e43472cf997f8c",
@@ -284,9 +284,7 @@
             "eae1ab410ce116f7"
         ],
         "x": 54,
-        "y": 239,
-        "w": 232,
-        "h": 82
+        "y": 239
     },
     {
         "id": "857046f1705f6e09",
@@ -337,9 +335,7 @@
             "18404cad9ee52512"
         ],
         "x": 244,
-        "y": 179,
-        "w": 462,
-        "h": 122
+        "y": 179
     },
     {
         "id": "7f19e7ce3ba183da",
@@ -488,6 +484,47 @@
         "y": 499,
         "w": 712,
         "h": 82
+    },
+    {
+        "id": "5bbaf42c3527112c",
+        "type": "group",
+        "z": "d811a8c07382bd1d",
+        "name": "UPC Discovery - Send Broadcast to 9811 port with Hello_from_ERCC",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "95b9f022cfaf753c",
+            "24d6a843c978e09e",
+            "689f8b8e61d5ce4b",
+            "f0d187d24cc7dfe4",
+            "08655c4748d1efe4"
+        ],
+        "x": 174,
+        "y": 59,
+        "w": 832,
+        "h": 142
+    },
+    {
+        "id": "4a7dc214459d3ef5",
+        "type": "group",
+        "z": "d811a8c07382bd1d",
+        "name": "Devices respond to the broadcast at port 9811 with their deviceId",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "24b2c5a5f1ea97bc",
+            "690d7a9adb894859",
+            "b71f76d9390966f5",
+            "8c2f92306db0fb60",
+            "f19f32137cd18b54",
+            "c681e39909b692a7"
+        ],
+        "x": 94,
+        "y": 299,
+        "w": 1032,
+        "h": 222
     },
     {
         "id": "45013fdfd43f76cb",
@@ -769,6 +806,25 @@
         "type": "ui_group",
         "name": "Hall Sensor 01",
         "tab": "7f2947c85d1fbc50",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ad0d7f51f9ebbad1",
+        "type": "ui_tab",
+        "name": "UPC Devices",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "25ed5bac9f0a0e34",
+        "type": "ui_group",
+        "name": "Devices",
+        "tab": "ad0d7f51f9ebbad1",
         "order": 1,
         "disp": true,
         "width": "6",
@@ -1800,7 +1856,8 @@
             "fde61d47216f1287",
             "35e08daeabc5fa71",
             "af0afab53c87e0ad",
-            "40d25260ba98c7df"
+            "40d25260ba98c7df",
+            "689f8b8e61d5ce4b"
         ],
         "x": 495,
         "y": 480,
@@ -1903,7 +1960,8 @@
             "d22e738b256cdec6",
             "eb7d0ddb30a55c18",
             "cae864a2b6640d37",
-            "40d25260ba98c7df"
+            "40d25260ba98c7df",
+            "689f8b8e61d5ce4b"
         ],
         "x": 295,
         "y": 120,
@@ -4548,6 +4606,243 @@
         "wires": [
             [
                 "53618b53ce69988c"
+            ]
+        ]
+    },
+    {
+        "id": "95b9f022cfaf753c",
+        "type": "inject",
+        "z": "d811a8c07382bd1d",
+        "g": "5bbaf42c3527112c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello_from_ERCC",
+        "payloadType": "str",
+        "x": 410,
+        "y": 160,
+        "wires": [
+            [
+                "08655c4748d1efe4"
+            ]
+        ]
+    },
+    {
+        "id": "24d6a843c978e09e",
+        "type": "udp out",
+        "z": "d811a8c07382bd1d",
+        "g": "5bbaf42c3527112c",
+        "name": "",
+        "addr": "255.255.255.255",
+        "iface": "",
+        "port": "9811",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "broad",
+        "x": 860,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "24b2c5a5f1ea97bc",
+        "type": "udp in",
+        "z": "d811a8c07382bd1d",
+        "g": "4a7dc214459d3ef5",
+        "name": "",
+        "iface": "",
+        "port": "9811",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "buffer",
+        "x": 180,
+        "y": 340,
+        "wires": [
+            [
+                "690d7a9adb894859"
+            ]
+        ]
+    },
+    {
+        "id": "690d7a9adb894859",
+        "type": "function",
+        "z": "d811a8c07382bd1d",
+        "g": "4a7dc214459d3ef5",
+        "name": "Review UDP message",
+        "func": "var b = msg.payload;\nvar result = b.toString();\n\nif (result.length < 9)\n   msg.payload = \"IGNORE\";\nelse\n{\n   var initial = result.substring(0,9);\n   if (initial == \"UNIVERSAL\")\n   {\n       msg.payload = \"DEVICE:\"+result+\"-IP:\"+msg.ip;\n   }\n   else\n   {\n       msg.payload = \"IGNORE\";\n   }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 340,
+        "wires": [
+            [
+                "b71f76d9390966f5"
+            ]
+        ]
+    },
+    {
+        "id": "b71f76d9390966f5",
+        "type": "switch",
+        "z": "d811a8c07382bd1d",
+        "g": "4a7dc214459d3ef5",
+        "name": "Is a message from a node?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "IGNORE",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 460,
+        "y": 480,
+        "wires": [
+            [
+                "c681e39909b692a7"
+            ]
+        ]
+    },
+    {
+        "id": "8c2f92306db0fb60",
+        "type": "function",
+        "z": "d811a8c07382bd1d",
+        "g": "4a7dc214459d3ef5",
+        "name": "Update UPC Table",
+        "func": "// Use an array to save all the devices found\nvar tableData = flow.get(\"savedData\") || [];\nvar payload = msg.payload;\nvar init = payload.indexOf(\"_\")+1;\nvar end = payload.indexOf(\"-\");\n// UNIVERSAL_nnnnnnnnnn-\n// 012345678901234567890\n// 9 - 20\n\nvar deviceId = payload.substring(init,end);\nvar ip = msg.ip;\n\ntableData.unshift(\n    {\n        \"#\": tableData.length,\n        \"deviceId\" : deviceId,\n        \"IP\" : ip,\n    }\n);\nmsg.payload = tableData;\nflow.set(\"savedData\",tableData);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 480,
+        "wires": [
+            [
+                "f19f32137cd18b54"
+            ]
+        ]
+    },
+    {
+        "id": "f19f32137cd18b54",
+        "type": "ui_table",
+        "z": "d811a8c07382bd1d",
+        "g": "4a7dc214459d3ef5",
+        "group": "25ed5bac9f0a0e34",
+        "name": "",
+        "order": 0,
+        "width": "6",
+        "height": "17",
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 1050,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "c681e39909b692a7",
+        "type": "rbe",
+        "z": "d811a8c07382bd1d",
+        "g": "4a7dc214459d3ef5",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 690,
+        "y": 480,
+        "wires": [
+            [
+                "8c2f92306db0fb60"
+            ]
+        ]
+    },
+    {
+        "id": "689f8b8e61d5ce4b",
+        "type": "link in",
+        "z": "d811a8c07382bd1d",
+        "g": "5bbaf42c3527112c",
+        "name": "link in 4",
+        "links": [
+            "442e7bc38dd4c3b7",
+            "758310f9eb5818de"
+        ],
+        "x": 215,
+        "y": 100,
+        "wires": [
+            [
+                "f0d187d24cc7dfe4"
+            ]
+        ]
+    },
+    {
+        "id": "f0d187d24cc7dfe4",
+        "type": "change",
+        "z": "d811a8c07382bd1d",
+        "g": "5bbaf42c3527112c",
+        "name": "Hello_from_ERCC",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Hello_from_ERCC",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 100,
+        "wires": [
+            [
+                "08655c4748d1efe4"
+            ]
+        ]
+    },
+    {
+        "id": "08655c4748d1efe4",
+        "type": "function",
+        "z": "d811a8c07382bd1d",
+        "g": "5bbaf42c3527112c",
+        "name": "Reset UPC cache",
+        "func": "var tableData = [];\n\nflow.set(\"savedData\", tableData);\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 160,
+        "wires": [
+            [
+                "24d6a843c978e09e"
             ]
         ]
     }
